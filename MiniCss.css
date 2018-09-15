@@ -1,0 +1,248 @@
+.root{
+  -fx-background-image:url('pic.jpg');
+  -fx-background-size:cover;
+}
+
+.btnadmin{
+  -fx-background-color: #0d261a;
+  -fx-text-fill:  #b3ffb3;
+}
+.btnadmin:hover{
+  -fx-background-color:  #206020;
+  -fx-border-radius: 10px;
+ 
+}
+.btnauditor{
+  -fx-background-color: #0d261a;
+  -fx-text-fill:  #b3ffb3;
+}
+.btnauditor:hover{
+ -fx-background-color:  #206020;
+  -fx-border-radius: 10px;
+}
+
+.btn_supplier_auditorView{
+   -fx-background-color: #000066 ;
+   -fx-text-alignment: center;
+   -fx-text-fill: #e6ffff;
+   -fx-border-radius: 20px;
+}
+.btn_brand_auditorView{
+  -fx-background-color: #000066 ;
+   -fx-text-alignment: center;
+   -fx-text-fill: #e6ffff;
+   -fx-border-radius: 20px;
+}
+.btn_category_auditorView{
+   -fx-background-color: #000066 ;
+   -fx-text-alignment: center;
+   -fx-text-fill: #e6ffff;
+   -fx-border-radius: 20px;
+}
+.btn_products_auditorView{
+   -fx-background-color: #000066 ;
+   -fx-text-alignment: center;
+   -fx-text-fill: #e6ffff;
+   -fx-border-radius: 20px;
+    
+}
+.btn_supplier_auditorView:hover{
+   -fx-background-color:  #008080;
+}
+
+.btn_products_auditorView:hover{
+   -fx-background-color:  #008080;
+}
+.btn_brand_auditorView:hover {
+    -fx-background-color:  #008080;
+}
+.btn_category_auditorView:hover{
+    -fx-background-color: #008080;
+}
+.btn_add_supplier{
+  -fx-background-color: #000066 ;
+   -fx-text-alignment: center;
+   -fx-text-fill: #e6ffff;
+   -fx-border-radius: 20px;
+ }
+.btn_update_supplier{
+  -fx-background-color: #000066 ;
+   -fx-text-alignment: center;
+   -fx-text-fill: #e6ffff;
+   -fx-border-radius: 20px;
+ }
+ .btn_delete_supplier{
+ -fx-background-color: #000066 ;
+   -fx-text-alignment: center;
+   -fx-text-fill: #e6ffff;
+   -fx-border-radius: 20px;
+ }    
+ .btn_add_supplier:hover{
+    -fx-background-color: #008080; 
+ }
+  .btn_update_supplier:hover{
+    -fx-background-color:  #008080; 
+ }
+  .btn_delete_supplier:hover{
+    -fx-background-color: #008080; 
+ }
+ .btn_load_supplier_details{
+     
+   -fx-background-color: #000066 ;
+   -fx-text-alignment: center;
+   -fx-text-fill: #e6ffff;
+   -fx-border-radius: 20px;
+ }
+ .btn_load_supplier_details:hover{
+     
+ -fx-background-color: #008080; 
+ }
+ .btn_add_supplier1{
+     -fx-background-color: #003399;
+     -fx-text-fill:  #99ffeb;
+     -fx-border-radius:20px;
+ }
+.btn_add_supplier1:hover{
+     -fx-background-color:  #6699ff;
+   
+ }
+ .btn_back_inaddsupplier{
+     -fx-background-color: #003399;
+     -fx-text-fill:  #99ffeb;
+     -fx-border-radius:20px;
+ }
+ .btn_back_inaddsupplier:hover{
+        -fx-background-color:  #6699ff;  
+ }
+.btn_update_supplier1{
+     -fx-background-color: #003399;
+     -fx-text-fill:  #99ffeb;
+     -fx-border-radius:20px;
+ }
+ .btn_load_supdetails{
+     -fx-background-color: #003399;
+     -fx-text-fill:  #99ffeb;
+     -fx-border-radius:20px;
+ }
+ .btn_back_inupdatesupplier{
+  -fx-background-color: #003399;
+     -fx-text-fill:  #99ffeb;
+     -fx-border-radius:20px;
+ }
+
+ .btn_load_supdetails_todelete{
+      -fx-background-color: #003399;
+     -fx-text-fill:  #99ffeb;
+     -fx-border-radius:20px;
+}
+.btn_load_supdetails_todelete:hover{
+  -fx-background-color:  #6699ff;    
+}
+.btn_delete_suppliers{
+      -fx-background-color: #003399;
+     -fx-text-fill:  #99ffeb;
+     -fx-border-radius:20px;   
+}
+.btn_delete_suppliers:hover{
+    -fx-background-color:  #6699ff; 
+}
+.btn_back_indeletesupplier{
+    -fx-background-color: #003399;
+    -fx-text-fill:  #99ffeb;
+    -fx-border-radius:20px;
+}
+.btn_back_indeletesupplier:hover{
+    -fx-background-color:  #6699ff; 
+}
+.AddBrandOverview{
+    -fx-background-color: #e6b3ff;
+}
+.btn_add_brand{
+    -fx-background-color: #bf00ff;
+}
+.btn_add_brand:hover{
+    -fx-background-color:#eb99ff;
+}
+.btn_back_in_addbrand{
+     -fx-background-color: #bf00ff;
+}
+.btn_back_in_addbrand:hover{
+    -fx-background-color:#eb99ff;
+}
+.GoBrandOverview{
+    -fx-background-color:#df9fbf; 
+}
+.btn_load_brands{
+    -fx-background-color: #ac3973;
+    -fx-text-fill:#d98cb3;
+}
+.btn_load_brands:hover{
+    -fx-background-color: #ecc6d9;
+}
+.btn_addbrand{
+    -fx-background-color:#ac3973;
+    -fx-text-fill:#d98cb3;
+}
+.btn_addbrand:hover{
+    -fx-background-color: #ecc6d9;
+}
+.btn_updatebrand{
+    -fx-background-color:#ac3973;
+    -fx-text-fill:#d98cb3;
+}
+.btn_updatebrand:hover{
+    -fx-background-color: #ecc6d9;
+}
+.btn_deletebrand{
+    -fx-background-color:#ac3973;
+    -fx-text-fill:#d98cb3;
+}
+.btn_deletebrand:hover{
+    -fx-background-color: #ecc6d9;
+}
+.btn_backtosupplier{
+    -fx-background-color:#ac3973;
+    -fx-text-fill:#d98cb3;
+}
+.btn_backtosupplier:hover{
+    -fx-background-color: #ecc6d9;
+}
+.UpdateBrandOverview{
+     -fx-background-color: #e6b3ff;
+}
+.btn_update_brand{
+     -fx-background-color: #bf00ff;
+}
+.btn_update_brand:hover{
+    -fx-background-color:#eb99ff;
+}
+.btn_back_in_updatebrand{
+     -fx-background-color: #bf00ff;
+}
+.btn_back_in_updatebrand:hover{
+    -fx-background-color:#eb99ff;
+}
+.btn_load_branddetails{
+    -fx-background-color: #bf00ff;
+}
+.DeleteBrandOverview{
+     -fx-background-color: #e6b3ff;
+}
+.btn_load_branddetails_todelete{
+  -fx-background-color: #bf00ff;   
+}
+.btn_load_branddetails_todelete:hover{
+    -fx-background-color:#ecc6d9;
+}
+.btn_delete_brand{
+   -fx-background-color: #bf00ff;  
+}
+.btn_delete_brand:hover{
+    -fx-background-color:#ecc6d9;
+}
+.btn_back_in_deletebrand{
+    -fx-background-color: #bf00ff;  
+}
+.btn_back_in_deletebrand:hover{
+     -fx-background-color:#ecc6d9;
+}
