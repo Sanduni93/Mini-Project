@@ -37,7 +37,7 @@
       </Label>
       <TextField fx:id="tf_brandname_inupdatebrand" layoutX="349.0" layoutY="179.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" AnchorPane.leftAnchor="350.0" />
       <TextField fx:id="tf_branddes_inupdatebrand" layoutX="348.0" layoutY="337.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" AnchorPane.leftAnchor="350.0" />
-      <Button fx:id="btn_back_in_updatebrand" layoutX="472.0" layoutY="423.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" styleClass="btn_back_in_updatebrand" stylesheets="@MiniCss.css" text="Back" textFill="#4d0540">
+      <Button fx:id="btn_back_in_updatebrand" layoutX="472.0" layoutY="423.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnGoBackToBrandOverview" styleClass="btn_back_in_updatebrand" stylesheets="@MiniCss.css" text="Back" textFill="#4d0540">
          <font>
             <Font name="Arial Black" size="14.0" />
          </font>
