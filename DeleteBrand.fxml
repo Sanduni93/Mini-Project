@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="DeleteBrandOverview" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="650.0" styleClass="DeleteBrandOverview" stylesheets="@MiniCss.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.DeleteBrandController">
+   <children>
+      <Label fx:id="lbl_deletebrand" layoutX="290.0" layoutY="32.0" text="Delete Brand" textFill="#550261" AnchorPane.leftAnchor="245.0" AnchorPane.rightAnchor="276.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="Bodoni MT Black" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_brandid_indeletebrand" layoutX="94.0" layoutY="155.0" text="Brand ID" textFill="#2b024a" AnchorPane.leftAnchor="139.0">
+         <font>
+            <Font name="Gill Sans MT" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_brandname_indeletebrand" layoutX="100.0" layoutY="211.0" text="Brand Name" textFill="#2b024a" AnchorPane.leftAnchor="139.0">
+         <font>
+            <Font name="Gill Sans MT" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_supname_indeletebrand" layoutX="100.0" layoutY="266.0" text="Supplied By" textFill="#2b024a" AnchorPane.leftAnchor="139.0">
+         <font>
+            <Font name="Gill Sans MT" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_date_indeletebrand" layoutX="108.0" layoutY="317.0" text="Date" textFill="#2b024a" AnchorPane.leftAnchor="139.0">
+         <font>
+            <Font name="Gill Sans MT" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_des_indeletebrand" layoutX="114.0" layoutY="370.0" text="Description" textFill="#2b024a" AnchorPane.leftAnchor="139.0">
+         <font>
+            <Font name="Gill Sans MT" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_brandname_indeletebrand" layoutX="277.0" layoutY="207.0" AnchorPane.leftAnchor="350.0" />
+      <TextField fx:id="tf_brandid_indeletebrand" layoutX="264.0" layoutY="160.0" AnchorPane.leftAnchor="350.0" />
+      <TextField fx:id="tf_des_indeletebrand" layoutX="264.0" layoutY="366.0" AnchorPane.leftAnchor="350.0" />
+      <TextField fx:id="tf_enter_brandid_todelete" layoutX="142.0" layoutY="68.0" promptText="Enter Brand ID" AnchorPane.leftAnchor="144.0" />
+      <ComboBox fx:id="combo_supname_indeletebrand" layoutX="264.0" layoutY="262.0" prefWidth="150.0" AnchorPane.leftAnchor="350.0" />
+      <DatePicker fx:id="datepicker_date_indeletebrand" layoutX="252.0" layoutY="313.0" prefHeight="25.0" prefWidth="150.0" AnchorPane.leftAnchor="350.0" />
+      <Button fx:id="btn_load_branddetails_todelete" layoutX="413.0" layoutY="68.0" mnemonicParsing="false" onAction="#btn_load_branddetails_todelete" prefHeight="25.0" prefWidth="51.0" styleClass="btn_load_branddetails_todelete" stylesheets="@MiniCss.css" text="GO" textFill="#550261" AnchorPane.leftAnchor="383.0">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_delete_brand" layoutX="245.0" layoutY="402.0" mnemonicParsing="false" onAction="#btnDeleteBrand" styleClass="btn_delete_brand" stylesheets="@MiniCss.css" text="Delete" textFill="#550261">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_back_in_deletebrand" layoutX="449.0" layoutY="434.0" mnemonicParsing="false" styleClass="btn_back_in_deletebrand" stylesheets="@MiniCss.css" text="Back" textFill="#550261" AnchorPane.bottomAnchor="17.0">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
