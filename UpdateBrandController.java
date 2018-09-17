@@ -5,10 +5,14 @@ import Dialog.AlertDialogInsert;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
+import java.sql.Date;
+//import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -51,6 +55,9 @@ public class UpdateBrandController implements Initializable {
     private TextField tf_brandname_inupdatebrand;
     @FXML
     private TextField tf_branddes_inupdatebrand;
+  //  @FXML
+   // private TextField tf_date_in_updatebrand;
+    
     @FXML
     private Button btn_back_in_updatebrand;
     @FXML
@@ -60,17 +67,18 @@ public class UpdateBrandController implements Initializable {
     @FXML
     private Button btn_update_brand;
     @FXML
-    private DatePicker datepicker_date_inupdatesupplier;
+    private DatePicker datepicker_date_inupdatebrand;
     
-ObservableList<String> list = FXCollections.observableArrayList();
-      private DBConnector db;
-      private Connection conn;
-      private PreparedStatement pst;
-      private ResultSet rs;
+      ObservableList<String> list = FXCollections.observableArrayList();
+       private DBConnector db;
+    Connection conn ;
+    ResultSet rs ;
+    PreparedStatement pst ;
       
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        //set combo box values
        db = new DBConnector();
         
            try {
@@ -111,7 +119,7 @@ ObservableList<String> list = FXCollections.observableArrayList();
     public void btnGoToUpdateBrandsDetails(ActionEvent event) {
 
         UpdateBrandController.Function f = new UpdateBrandController.Function();
-        ResultSet rs = null;
+       // ResultSet rs = null;
         String brandid = "brandid";
         String brandname = "brandname";
         String supname = "supname";
@@ -122,12 +130,12 @@ ObservableList<String> list = FXCollections.observableArrayList();
         rs = f.find(tf_enterbrandid.getText());
 
         try {
-
-            if (rs.next()) {
+                if (rs.next()) {
+                    
                 tf_brandid_inupdatebrand.setText(rs.getString("brandid")); 
                 tf_brandname_inupdatebrand.setText(rs.getString("brandname"));
                 combo_supname_inupdatebrand.setValue(rs.getString("supname"));
-               
+              //  tf_date_in_updatebrand.setText(rs.getString("date"));
                 tf_branddes_inupdatebrand.setText(rs.getString("des"));
               
             } else {
@@ -144,27 +152,34 @@ ObservableList<String> list = FXCollections.observableArrayList();
     }
     
     @FXML
-    public void btnUpdateSupplier(ActionEvent event) throws SQLException {
+    public void btnUpdateBrand(ActionEvent event) throws SQLException {
 
-        try {
-
-              String bid = tf_brandid_inupdatebrand.getText();
-          String bname = tf_brandname_inupdatebrand.getText();
-          String supname = combo_supname_inupdatebrand.getValue();
-          String date = datepicker_date_inupdatesupplier.getEditor().getText();
-          String des = tf_branddes_inupdatebrand.getText();
-
-            String sql = "update addbrandstable set brandid='" + bid + "',brandname='" + bname + "',supname = '"+supname+"',date='"+date+"',des='" + des + "'";
-            pst = conn.prepareStatement(sql);
-            pst.execute();
+        
+        
+        try{
+              
+       String brandid = tf_brandid_inupdatebrand.getText();
+       String brandname = tf_brandname_inupdatebrand.getText();
+        String supname =combo_supname_inupdatebrand.getSelectionModel().getSelectedItem();
+       LocalDate date= datepicker_date_inupdatebrand.getValue();
+       String des = tf_branddes_inupdatebrand.getText();
+        
+    
+        String sql = "update addbrandstable set brandid='"+brandid+"', brandname='"+brandname+"',supname='"+supname+"', date='"+date+"',des='"+des+"' where brandid='"+brandid+"'";
+          pst = conn.prepareStatement(sql);
+        pst.execute();
+                    AlertDialogInsert.display("Connection", "Data Updated Successfully");
             
-            AlertDialogInsert.display("Connection", "Data Updated Successfully");
-
-        } catch (Exception e) {
-
-            JOptionPane.showMessageDialog(null,e);
-
         }
+        
+        catch(SQLException ex)
+        {
+        
+         JOptionPane.showMessageDialog(null, ex.getMessage());
+        
+        }
+        
+        
     }
     
     @FXML
