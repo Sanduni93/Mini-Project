@@ -140,6 +140,7 @@ public class AuditorViewController implements Initializable {
         db = new DBConnector();
 
     }
+    //set values for table
 
     @FXML
     private void btn_load_supplier_details(ActionEvent event) {

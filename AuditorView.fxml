@@ -8,14 +8,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="auditorView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" styleClass="auditorView" stylesheets="@MiniCss.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.AuditorViewController">
+<AnchorPane id="AnchorPane" fx:id="auditorView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #e6ffff;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.AuditorViewController">
    <children>
       <Label layoutX="250.0" layoutY="81.0" prefHeight="39.0" prefWidth="274.0" text="Information about suppliers" textFill="#4a0443">
          <font>
             <Font name="Calibri Bold" size="16.0" />
          </font>
       </Label>
-      <TableView fx:id="tbl_supinfo" layoutX="25.0" layoutY="143.0" prefHeight="255.0" prefWidth="664.0">
+      <TableView fx:id="tbl_supinfo" layoutX="18.0" layoutY="141.0" prefHeight="255.0" prefWidth="664.0">
         <columns>
           <TableColumn fx:id="col_supid" prefWidth="70.0" text="Supplier ID" />
           <TableColumn fx:id="col_supname" minWidth="7.0" prefWidth="138.0" text="Supplier Name" />
@@ -44,7 +44,7 @@
             <Font name="Century Gothic Bold" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="btn_supplier_auditorView" layoutX="60.0" layoutY="28.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" styleClass="btn_supplier_auditorView" stylesheets="@MiniCss.css" text="Supplier" textFill="#391039" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="520.0" AnchorPane.topAnchor="28.0">
+      <Button fx:id="btn_supplier_auditorView" layoutX="60.0" layoutY="28.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" styleClass="btn_supplier_auditorView" stylesheets="@MiniCss.css" text="Supplier" textFill="#7ac3dd" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="520.0" AnchorPane.topAnchor="28.0">
          <font>
             <Font name="Century Gothic Bold" size="14.0" />
          </font>
