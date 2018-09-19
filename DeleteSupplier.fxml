@@ -6,34 +6,34 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="DeleteSupplierOverview" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="620.0" styleClass="DeleteSupplierOverview" stylesheets="@MiniCss.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.DeleteSupplierController">
+<AnchorPane id="AnchorPane" fx:id="DeleteSupplierOverview" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="625.0" style="-fx-background-color: #8080ff;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.DeleteSupplierController">
    <children>
-      <Label fx:id="lbl_deletesupplier" layoutX="229.0" layoutY="12.0" prefHeight="32.0" prefWidth="142.0" text="Delete Supplier" textFill="#0000cc" AnchorPane.leftAnchor="255.0">
+      <Label fx:id="lbl_deletesupplier" layoutX="229.0" layoutY="12.0" prefHeight="32.0" prefWidth="142.0" text="Delete Supplier" textFill="#020236" AnchorPane.leftAnchor="255.0">
          <font>
             <Font name="Bodoni MT Black" size="18.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_deletesupid" layoutX="78.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="16.0" prefWidth="148.0" text="Supplier ID" textFill="#000033" AnchorPane.leftAnchor="116.0" AnchorPane.topAnchor="112.0">
+      <Label fx:id="lbl_deletesupid" layoutX="116.0" layoutY="125.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="16.0" prefWidth="148.0" text="Supplier ID" textFill="#000033" AnchorPane.leftAnchor="116.0" AnchorPane.topAnchor="125.0">
          <font>
             <Font name="Gill Sans MT" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_deletesupname" layoutX="78.0" layoutY="157.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="16.0" prefWidth="148.0" text="Suplier Name" textFill="#000033" AnchorPane.leftAnchor="116.0" AnchorPane.topAnchor="160.0">
+      <Label fx:id="lbl_deletesupname" layoutX="116.0" layoutY="170.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="16.0" prefWidth="148.0" text="Suplier Name" textFill="#000033" AnchorPane.leftAnchor="116.0" AnchorPane.topAnchor="170.0">
          <font>
             <Font name="Gill Sans MT" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_deletesupconnum" layoutX="78.0" layoutY="200.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Supplier Contact Number" textFill="#000033" AnchorPane.leftAnchor="116.0">
+      <Label fx:id="lbl_deletesupconnum" layoutX="107.0" layoutY="213.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Supplier Contact Number" textFill="#000033" AnchorPane.leftAnchor="116.0">
          <font>
             <Font name="Gill Sans MT" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_deletesupadd" layoutX="78.0" layoutY="250.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="16.0" prefWidth="149.0" text="Address" textFill="#000033" AnchorPane.leftAnchor="116.0">
+      <Label fx:id="lbl_deletesupadd" layoutX="116.0" layoutY="263.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="16.0" prefWidth="149.0" text="Address" textFill="#000033" AnchorPane.leftAnchor="116.0">
          <font>
             <Font name="Gill Sans MT" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_deletesupdes" layoutX="78.0" layoutY="295.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="16.0" prefWidth="149.0" text="Description" textFill="#000033" AnchorPane.leftAnchor="116.0">
+      <Label fx:id="lbl_deletesupdes" layoutX="116.0" layoutY="308.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="16.0" prefWidth="149.0" text="Description" textFill="#000033" AnchorPane.leftAnchor="116.0">
          <font>
             <Font name="Gill Sans MT" size="14.0" />
          </font>
@@ -43,16 +43,16 @@
          <font>
             <Font name="Arial Black" size="12.0" />
          </font></Button>
-      <TextField fx:id="tf_delete_supid" layoutX="360.0" layoutY="106.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" />
-      <TextField fx:id="tf_delete_supname" layoutX="360.0" layoutY="153.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" />
-      <TextField fx:id="tf_delete_supconnum" layoutX="360.0" layoutY="196.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" />
-      <TextField fx:id="tf_delete_supadd" layoutX="360.0" layoutY="246.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" />
-      <TextField fx:id="tf_delete_supdes" layoutX="360.0" layoutY="291.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" />
-      <Button fx:id="btn_delete_suppliers" layoutX="230.0" layoutY="357.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnDeleteSupplier" styleClass="btn_delete_suppliers" stylesheets="@MiniCss.css" text="Delete" AnchorPane.bottomAnchor="28.0">
+      <TextField fx:id="tf_delete_supid" layoutX="360.0" layoutY="106.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="166.0" style="-fx-background-color: transparent; -fx-border-color: #000033; -fx-border-width: 0px 0px 2px 0px;" AnchorPane.leftAnchor="365.0" />
+      <TextField fx:id="tf_delete_supname" layoutX="360.0" layoutY="153.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="166.0" style="-fx-background-color: transparent; -fx-border-color: #000033; -fx-border-width: 0px 0px 2px 0px;" AnchorPane.leftAnchor="365.0" />
+      <TextField fx:id="tf_delete_supconnum" layoutX="360.0" layoutY="196.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="166.0" style="-fx-background-color: transparent; -fx-border-color: #000033; -fx-border-width: 0px 0px 2px 0px;" AnchorPane.leftAnchor="365.0" />
+      <TextField fx:id="tf_delete_supadd" layoutX="360.0" layoutY="246.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="166.0" style="-fx-background-color: transparent; -fx-border-color: #000033; -fx-border-width: 0px 0px 2px 0px;" AnchorPane.leftAnchor="365.0" />
+      <TextField fx:id="tf_delete_supdes" layoutX="360.0" layoutY="291.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="166.0" style="-fx-background-color: transparent; -fx-border-color: #000033; -fx-border-width: 0px 0px 2px 0px;" AnchorPane.leftAnchor="365.0" />
+      <Button fx:id="btn_delete_suppliers" layoutX="235.0" layoutY="383.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnDeleteSupplier" prefHeight="32.0" prefWidth="67.0" styleClass="btn_delete_suppliers" stylesheets="@MiniCss.css" text="Delete" AnchorPane.bottomAnchor="57.0">
          <font>
             <Font name="Arial Black" size="12.0" />
          </font></Button>
-      <Button fx:id="btn_back_indeletesupplier" layoutX="530.0" layoutY="369.0" mnemonicParsing="false" onAction="#btnBackDeleteSupplier" styleClass="btn_back_indeletesupplier" stylesheets="@MiniCss.css" text="Back" AnchorPane.bottomAnchor="16.0">
+      <Button fx:id="btn_back_indeletesupplier" layoutX="487.0" layoutY="419.0" mnemonicParsing="false" onAction="#btnBackDeleteSupplier" styleClass="btn_back_indeletesupplier" stylesheets="@MiniCss.css" text="Back" AnchorPane.bottomAnchor="21.0">
          <font>
             <Font name="Arial Black" size="12.0" />
          </font></Button>

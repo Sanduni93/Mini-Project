@@ -149,9 +149,6 @@ public class DeleteSupplierController implements Initializable {
 
      
   
-     
-  
-     
-      }
+  }
 
 

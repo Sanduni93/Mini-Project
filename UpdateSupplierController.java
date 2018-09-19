@@ -160,7 +160,7 @@ public class UpdateSupplierController implements Initializable {
     @FXML
     public void btnBackUpdateSupplier(ActionEvent event) throws IOException
     {
-   Parent BackUpdateSupplier = FXMLLoader.load(getClass().getResource("AuditorView.fxml"));
+    Parent BackUpdateSupplier = FXMLLoader.load(getClass().getResource("AuditorView.fxml"));
     Scene supplier1 = new Scene(BackUpdateSupplier);
     
     Stage showSupplier1= (Stage) ((Node) event.getSource()).getScene().getWindow();

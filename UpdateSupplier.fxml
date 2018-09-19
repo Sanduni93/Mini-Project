@@ -6,29 +6,29 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="UpdateSupplierOverview" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="620.0" styleClass="UpdateSupplierOverview" stylesheets="@MiniCss.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.UpdateSupplierController">
+<AnchorPane id="AnchorPane" fx:id="UpdateSupplierOverview" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="625.0" style="-fx-background-color: #8080ff;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.UpdateSupplierController">
    <children>
-      <Label fx:id="lbl_updatesupplier" layoutX="210.0" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="148.0" text="Update Supplier" textFill="#0000cc" AnchorPane.leftAnchor="255.0">
+      <Label fx:id="lbl_updatesupplier" layoutX="210.0" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="148.0" text="Update Supplier" textFill="#020236" AnchorPane.leftAnchor="255.0">
          <font>
             <Font name="Bodoni MT Black" size="18.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_updatesupname" layoutX="118.0" layoutY="160.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Supplier Name" textFill="#000033" AnchorPane.leftAnchor="116.0" AnchorPane.topAnchor="160.0">
+      <Label fx:id="lbl_updatesupname" layoutX="116.0" layoutY="175.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Supplier Name" textFill="#000033" AnchorPane.leftAnchor="117.0" AnchorPane.topAnchor="175.0">
          <font>
             <Font name="Gill Sans MT" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_updatesupconnum" layoutX="118.0" layoutY="214.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Supplier Contact Number" textFill="#000033" AnchorPane.leftAnchor="116.0">
+      <Label fx:id="lbl_updatesupconnum" layoutX="116.0" layoutY="223.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Supplier Contact Number" textFill="#000033" AnchorPane.leftAnchor="117.0">
          <font>
             <Font name="Gill Sans MT" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_updatesupadd" layoutX="128.0" layoutY="258.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Address" textFill="#000033" AnchorPane.leftAnchor="116.0">
+      <Label fx:id="lbl_updatesupadd" layoutX="118.0" layoutY="272.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Address" textFill="#000033" AnchorPane.leftAnchor="117.0">
          <font>
             <Font name="Gill Sans MT" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_updatesupdes" layoutX="126.0" layoutY="302.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Description" textFill="#000033" AnchorPane.leftAnchor="116.0">
+      <Label fx:id="lbl_updatesupdes" layoutX="116.0" layoutY="323.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Description" textFill="#000033" AnchorPane.leftAnchor="117.0">
          <font>
             <Font name="Gill Sans MT" size="14.0" />
          </font>
@@ -37,16 +37,16 @@
          <font>
             <Font name="Arial Black" size="13.0" />
          </font></Button>
-      <TextField fx:id="tf_update_supname" layoutX="358.0" layoutY="158.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="180.0" />
-      <TextField fx:id="tf_update_supconnum" layoutX="358.0" layoutY="209.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="180.0" />
-      <TextField fx:id="tf_update_supadd" layoutX="358.0" layoutY="255.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="180.0" />
-      <TextField fx:id="tf_update_supdes" layoutX="358.0" layoutY="297.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="180.0" />
-      <Label fx:id="lbl_updatesupid" layoutX="128.0" layoutY="112.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Supplier ID" textFill="#000033" AnchorPane.leftAnchor="116.0" AnchorPane.topAnchor="112.0">
+      <TextField fx:id="tf_update_supname" layoutX="358.0" layoutY="158.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="180.0" style="-fx-background-color: transparent; -fx-border-color: #000033; -fx-border-width: 0px 0px 2px 0px;" AnchorPane.leftAnchor="358.0" />
+      <TextField fx:id="tf_update_supconnum" layoutX="358.0" layoutY="209.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="180.0" style="-fx-background-color: transparent; -fx-border-color: #000033; -fx-border-width: 0px 0px 2px 0px;" AnchorPane.leftAnchor="358.0" />
+      <TextField fx:id="tf_update_supadd" layoutX="358.0" layoutY="255.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="180.0" style="-fx-background-color: transparent; -fx-border-color: #000033; -fx-border-width: 0px 0px 2px 0px;" AnchorPane.leftAnchor="358.0" />
+      <TextField fx:id="tf_update_supdes" layoutX="358.0" layoutY="306.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="180.0" style="-fx-background-color: transparent; -fx-border-color: #000033; -fx-border-width: 0px 0px 2px 0px;" AnchorPane.leftAnchor="358.0" />
+      <Label fx:id="lbl_updatesupid" layoutX="117.0" layoutY="127.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Supplier ID" textFill="#000033" AnchorPane.leftAnchor="117.0" AnchorPane.topAnchor="127.0">
          <font>
             <Font name="Gill Sans MT" size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="tf_update_supid" layoutX="358.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="180.0" />
+      <TextField fx:id="tf_update_supid" layoutX="358.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="180.0" style="-fx-background-color: transparent; -fx-border-color: #000033; -fx-border-width: 0px 0px 2px 0px;" AnchorPane.leftAnchor="358.0" />
       <TextField fx:id="enter_supplierid_toupdate" layoutX="141.0" layoutY="61.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnGoToUpdateSupplierDetails" promptText="Enter Supplier ID" AnchorPane.leftAnchor="141.0" />
       <Button fx:id="btn_load_supdetails" layoutX="393.0" layoutY="61.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnGoToUpdateSupplierDetails" prefHeight="25.0" prefWidth="70.0" styleClass="btn_load_supdetails" stylesheets="@MiniCss.css" text="GO" AnchorPane.leftAnchor="393.0">
          <font>

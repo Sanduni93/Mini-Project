@@ -63,14 +63,15 @@ public class AddSupplierController implements Initializable {
     @FXML
     public void AddSupplier() throws SQLException {
         Connection conn = db.Connect();
-        String sql = "INSERT INTO addsuppliertable(supid,supname, supconnum, supadd, des) VALUES (?,?,?,?,?)";
+        String sql = "INSERT INTO addsuppliertable(supid,supname, supconnum, supadd, des) VALUES (?,?,?,?,?)"; 
         String supid = tf_supid.getText();
         String supname = tf_supname.getText();
         String supconnum = tf_supconnum.getText();
         String supadd = tf_supadd.getText();
         String des = tf_supdes.getText();
 
-        try {
+        try 
+          {
             pst = conn.prepareStatement(sql);
             pst.setString(1, supid);
             pst.setString(2, supname);
@@ -79,9 +80,7 @@ public class AddSupplierController implements Initializable {
             pst.setString(5, des);
             
             AlertDialogInsert.display("Connection", "Data Inserted Successfully");
-           
-
-        } catch (SQLException ex) {
+           } catch (SQLException ex) {
             Logger.getLogger(AddSupplierController.class.getName()).log(Level.SEVERE, null, ex);
         } finally {
             pst.execute();
@@ -92,7 +91,6 @@ public class AddSupplierController implements Initializable {
         tf_supconnum.clear();
         tf_supadd.clear();
         tf_supdes.clear();
-
     }
     @FXML
     public void btnBackAddSupplier(ActionEvent event) throws IOException
@@ -104,11 +102,5 @@ public class AddSupplierController implements Initializable {
     Stage showSupplier= (Stage) ((Node) event.getSource()).getScene().getWindow();
     showSupplier.setScene(supplier);
     showSupplier.show();
-    
-    
-    
     }
-    
-    
-
 }
