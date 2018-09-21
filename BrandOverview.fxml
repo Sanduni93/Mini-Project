@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="GoBrandOverview" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" styleClass="GoBrandOverview" stylesheets="@MiniCss.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.BrandOverviewController">
+<AnchorPane id="AnchorPane" fx:id="GoBrandOverview" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #ff66a3;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.BrandOverviewController">
    <children>
       <Label fx:id="lbl_brandinfo" layoutX="302.0" layoutY="23.0" prefHeight="20.0" prefWidth="210.0" text="Information About Brands" textFill="#570352" AnchorPane.leftAnchor="295.0" AnchorPane.rightAnchor="295.0">
          <font>
