@@ -54,10 +54,10 @@ public class BrandOverviewController implements Initializable {
     @FXML
     private Button btn_backtosupplier;
 
-     private DBConnector db;
+    private DBConnector db;
     private PreparedStatement pst = null;
     private Object event;
-       private ObservableList<ModelTableBrands> data;
+    private ObservableList<ModelTableBrands> data;
 
     
     
