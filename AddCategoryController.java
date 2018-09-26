@@ -153,9 +153,5 @@ Parent BackUpdateSupplier = FXMLLoader.load(getClass().getResource("CategoryOver
     Stage showCategory1= (Stage) ((Node) event.getSource()).getScene().getWindow();
     showCategory1.setScene(category1);
     showCategory1.show();
-    
-    
-
 }
-    
 }
