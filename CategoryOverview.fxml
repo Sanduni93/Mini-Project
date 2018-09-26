@@ -14,7 +14,7 @@
             <Font name="Calibri Bold" size="16.0" />
          </font>
       </Label>
-      <Button fx:id="btn_load_catgdetails" layoutX="37.0" layoutY="371.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" styleClass="btn_load_catgdetails" stylesheets="@MiniCss.css" text="Load Category Details">
+      <Button fx:id="btn_load_catgdetails" layoutX="37.0" layoutY="371.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btn_load_category_details" styleClass="btn_load_catgdetails" stylesheets="@MiniCss.css" text="Load Category Details">
          <font>
             <Font name="Arial Black" size="14.0" />
          </font>
@@ -34,7 +34,7 @@
             <Font name="Arial Black" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="btn_back_in_catgoverview" layoutX="656.0" layoutY="471.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" styleClass="btn_back_in_catgoverview" stylesheets="@MiniCss.css" text="Back">
+      <Button fx:id="btn_back_in_catgoverview" layoutX="656.0" layoutY="471.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnGoBackToSupplierOverviewFromCategoryView" styleClass="btn_back_in_catgoverview" stylesheets="@MiniCss.css" text="Back">
          <font>
             <Font name="Arial Black" size="14.0" />
          </font>

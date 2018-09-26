@@ -3,8 +3,13 @@ package main;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -16,6 +21,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
@@ -37,19 +43,19 @@ public class CategoryOverviewController implements Initializable {
     @FXML
     private Button btn_back_in_catgoverview;
     @FXML
-    private TableView<?> tbl_catg_info;
+    private TableView<ModelTableCategory> tbl_catg_info;
     @FXML
-    private TableColumn<?, ?> col_catgid;
+    private TableColumn<ModelTableCategory, String> col_catgid;
     @FXML
-    private TableColumn<?, ?> col_catgname;
+    private TableColumn<ModelTableCategory, String> col_catgname;
     @FXML
-    private TableColumn<?, ?> col_brandname;
+    private TableColumn<ModelTableCategory, String> col_brandname;
     @FXML
-    private TableColumn<?, ?> col_supname;
+    private TableColumn<ModelTableCategory, String> col_supname;
     @FXML
-    private TableColumn<?, ?> col_date;
+    private TableColumn<ModelTableCategory, String> col_date;
     @FXML
-    private TableColumn<?, ?> col_des;
+    private TableColumn<ModelTableCategory, String> col_des;
     
     private DBConnector db;
     private PreparedStatement pst=null;
@@ -96,6 +102,54 @@ public class CategoryOverviewController implements Initializable {
         Stage showDeleteCategory= (Stage) ((Node) event.getSource()).getScene().getWindow(); 
         showDeleteCategory.setScene(updatecategory);
         showDeleteCategory.show();
+    
+    }
+    
+     //set values for table
+    private ObservableList<ModelTableCategory> data;
+    @FXML
+    private void btn_load_category_details(ActionEvent event) {
+        try {
+
+            Connection conn = db.Connect();
+            data = FXCollections.observableArrayList();
+
+            ResultSet rs = conn.createStatement().executeQuery("select*from addcategorytable");
+        
+            while (rs.next()) {
+                data.add(new ModelTableCategory(rs.getString("categoryid"),rs.getString("categoryname"), rs.getString("brandname"),
+                rs.getString("supname"),rs.getString("date"),rs.getString("des")));
+
+            }
+
+        } catch (SQLException ex) {
+            System.err.println("Error" + ex);
+
+        }
+
+        //set values for table
+        col_catgid.setCellValueFactory(new PropertyValueFactory<>("categoryid"));
+        col_catgname.setCellValueFactory(new PropertyValueFactory<>("categoryname"));
+        col_brandname.setCellValueFactory(new PropertyValueFactory<>("brandname"));
+        col_supname.setCellValueFactory(new PropertyValueFactory<>("supname"));
+        col_date.setCellValueFactory(new PropertyValueFactory("date"));
+        col_des.setCellValueFactory(new PropertyValueFactory("des"));
+
+        tbl_catg_info.setItems(data);
+
+    }
+    
+    //go backto supplier overview
+    @FXML
+    public void btnGoBackToSupplierOverviewFromCategoryView(ActionEvent event) throws IOException{
+    Parent BackCategoryOverview = FXMLLoader.load(getClass().getResource("AuditorView.fxml"));
+    Scene supplierfromcategory = new Scene(BackCategoryOverview);
+    
+    Stage showSupplierFromCategory= (Stage) ((Node) event.getSource()).getScene().getWindow();
+    showSupplierFromCategory.setScene(supplierfromcategory);
+    showSupplierFromCategory.show();
+    
+    
     
     }
     
