@@ -317,25 +317,3 @@
 .btn_back_in_updatecatg{
 -fx-background-color: #ecc6c6;     
 }
-.btn_load_catgdetails_todelete{
-     -fx-background-color:#bf4040;
-  -fx-text-fill:  #4d0000 ; 
-}
-.btn_load_catgdetails_todelete:hover{
-   -fx-background-color: #ecc6c6; 
-}
-.btn_delete_catg{
-       -fx-background-color:#bf4040;
-  -fx-text-fill:  #4d0000 ;   
-}
-.btn_delete_catg:hover{
-  -fx-background-color: #ecc6c6;   
-}
-.btn_back_in_deletecatg{
-          -fx-background-color:#bf4040;
-  -fx-text-fill:  #4d0000 ;  
-}
-.btn_back_in_deletecatg:hover{
-    -fx-background-color: #ecc6c6;  
-    
-}
