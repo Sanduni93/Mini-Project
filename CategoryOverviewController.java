@@ -85,20 +85,6 @@ public class CategoryOverviewController implements Initializable {
     
     }
     
-    //delete category
-    
-         
-    @FXML
-    public void deleteCatgBtn(ActionEvent event) throws IOException{
-       Parent goDeleteCategory = FXMLLoader.load(getClass().getResource("DeleteCategory.fxml"));
-        Scene updatecategory = new Scene(goDeleteCategory);
-    
-        Stage showDeleteCategory= (Stage) ((Node) event.getSource()).getScene().getWindow(); 
-        showDeleteCategory.setScene(updatecategory);
-        showDeleteCategory.show();
-    
-    }
-    
     
     
     
