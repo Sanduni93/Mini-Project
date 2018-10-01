@@ -10,7 +10,7 @@
 
 <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="820.0" style="-fx-background-color: #ff6699;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.AddProductController">
    <children>
-      <Label fx:id="lbl_addproduct" layoutX="379.0" layoutY="9.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="42.0" prefWidth="130.0" text="Add Product" textFill="#b50666">
+      <Label fx:id="lbl_addproduct" layoutX="379.0" layoutY="9.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="42.0" prefWidth="130.0" text="Add Product" textFill="#720440">
          <font>
             <Font name="Bodoni MT Black" size="18.0" />
          </font></Label>
