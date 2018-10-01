@@ -317,3 +317,73 @@
 .btn_back_in_updatecatg{
 -fx-background-color: #ecc6c6;     
 }
+.btn_load_catgdetails_todelete{
+     -fx-background-color:#bf4040;
+  -fx-text-fill:  #4d0000 ; 
+}
+.btn_load_catgdetails_todelete:hover{
+   -fx-background-color: #ecc6c6; 
+}
+.btn_delete_catg{
+       -fx-background-color:#bf4040;
+  -fx-text-fill:  #4d0000 ;   
+}
+.btn_delete_catg:hover{
+  -fx-background-color: #ecc6c6;   
+}
+.btn_back_in_deletecatg{
+   -fx-background-color:#bf4040;
+  -fx-text-fill:  #4d0000 ;  
+}
+.btn_back_in_deletecatg:hover{
+    -fx-background-color: #ecc6c6;  
+}
+.btn_load_productdetails{
+  -fx-background-color:  #990073;
+-fx-text-fill:  #ff66ff; 
+}
+.btn_load_productdetails:hover{
+    -fx-background-color:  #ffe6ff;
+}
+.btn_addproduct{
+   -fx-background-color:  #990073;
+   -fx-text-fill:  #ff66ff;    
+}
+.btn_addproduct:hover{
+  -fx-background-color:  #ffe6ff;   
+}
+.btn_updateproduct{
+-fx-background-color:  #990073;
+-fx-text-fill:  #ff66ff;    
+}
+.btn_updateproduct:hover{
+  -fx-background-color:  #ffe6ff;  
+}
+.btn_deleteproduct{
+-fx-background-color:  #990073;
+-fx-text-fill:  #ff66ff;    
+}
+.btn_deleteproduct:hover{
+    -fx-background-color:  #ffe6ff;    
+}
+.btn_back_in_product{
+ -fx-background-color:  #990073;
+-fx-text-fill:  #ff66ff;    
+}
+.btn_back_in_product:hover{
+     -fx-background-color:  #ffe6ff;    
+}
+.btn_add_inaddproduct{
+    -fx-background-color:  #660022;
+    -fx-text-fill:  #ff4d88;
+}
+.btn_add_inaddproduct:hover{
+    -fx-background-color:#e60073;
+}
+.btn_back_in_addproduct{
+    -fx-background-color:  #660022;
+    -fx-text-fill:  #ff4d88;
+}
+.btn_back_in_addproduct:hover{
+   -fx-background-color:#e60073;  
+}
