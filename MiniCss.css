@@ -387,3 +387,24 @@
 .btn_back_in_addproduct:hover{
    -fx-background-color:#e60073;  
 }
+.btn_updateproduct{
+   -fx-background-color:  #660022;
+    -fx-text-fill:  #ff4d88;   
+}
+.btn_updateproduct:hover{
+     -fx-background-color:#e60073;    
+}
+.btn_back_in_updateproduct{
+   -fx-background-color:  #660022;
+    -fx-text-fill:  #ff4d88;     
+}
+.btn_back_in_updateproduct:hover{
+     -fx-background-color:#e60073;
+}
+.btn_load_productdetails_toupdate{
+    -fx-background-color:  #660022;
+    -fx-text-fill:  #ff4d88;   
+}
+.btn_load_productdetails_toupdate:hover{
+     -fx-background-color:#e60073;
+}
