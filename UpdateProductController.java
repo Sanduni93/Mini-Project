@@ -1,3 +1,4 @@
+
 package main;
 
 import java.net.URL;
@@ -66,13 +67,60 @@ public class UpdateProductController implements Initializable {
     @FXML
     private Button btn_back_in_updateproduct;
 
-
+    ObservableList<String> list1 = FXCollections.observableArrayList();
+    ObservableList<String> list2 = FXCollections.observableArrayList();
+    ObservableList<String> list3 = FXCollections.observableArrayList();
+    private DBConnector db;
+    Connection conn=null;
+    PreparedStatement pst=null;
+    ResultSet rs = null;
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+       
+         db = new DBConnector();
 
+        //add supplier's names for combobox
+        try {
+            conn = DriverManager.getConnection("jdbc:mysql://localhost/elecdesk", "root", "");
+            pst = conn.prepareStatement("select*from addsuppliertable");
+            rs = pst.executeQuery();
+            while (rs.next()) {
+                list1.add(rs.getString("supname"));
+            }
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
 
-    }
+        combo_supname_in_updateproduct.setItems(list1);
+        //add brand names for combobox
+        try {
+            conn = DriverManager.getConnection("jdbc:mysql://localhost/elecdesk", "root", "");
+            pst = conn.prepareStatement("select*from addbrandstable");
+            rs = pst.executeQuery();
+            while (rs.next()) {
+                list2.add(rs.getString("brandname"));
+            }
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
+
+        combo_brand_in_updateproduct.setItems(list2);
+
+        //add category names for combobox   
+        try {
+            conn = DriverManager.getConnection("jdbc:mysql://localhost/elecdesk", "root", "");
+            pst = conn.prepareStatement("select*from addcategorytable");
+            rs = pst.executeQuery();
+            while (rs.next()) {
+                list3.add(rs.getString("categoryname"));
+            }
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
+
+        combo_category_in_updateproduct.setItems(list3);
+        
+        
+    }    
     
-    
-
 }
