@@ -10,67 +10,75 @@
 
 <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="820.0" style="-fx-background-color: #ff6699;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.UpdateProductController">
    <children>
-      <Label fx:id="lbl_update_product" layoutX="338.0" layoutY="28.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Update Product" textFill="#720440">
+      <Label fx:id="lbl_update_product" layoutX="338.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="144.0" text="Update Product" textFill="#720440">
          <font>
             <Font name="Bodoni MT Black" size="18.0" />
          </font></Label>
-      <Label fx:id="lbl_supname_in_updateproduct" layoutX="425.0" layoutY="96.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Supplier ' s Name" AnchorPane.leftAnchor="410.0">
+      <Label fx:id="lbl_supname_in_updateproduct" layoutX="425.0" layoutY="158.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Supplier ' s Name" AnchorPane.leftAnchor="403.0">
          <font>
             <Font name="Times New Roman" size="16.0" />
          </font></Label>
-      <Label fx:id="lbl_brand_in_updateproduct" layoutX="422.0" layoutY="154.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Brand" AnchorPane.leftAnchor="410.0">
+      <Label fx:id="lbl_brand_in_updateproduct" layoutX="415.0" layoutY="211.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Brand" AnchorPane.leftAnchor="403.0">
          <font>
             <Font name="Times New Roman" size="16.0" />
          </font></Label>
-      <Label fx:id="lbl_category_in_updateproduct" layoutX="422.0" layoutY="211.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Category" AnchorPane.leftAnchor="410.0">
+      <Label fx:id="lbl_category_in_updateproduct" layoutX="401.0" layoutY="279.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Category" AnchorPane.leftAnchor="403.0">
          <font>
             <Font name="Times New Roman" size="16.0" />
          </font></Label>
-      <Label fx:id="lbl_rma_in_updateproduct" layoutX="426.0" layoutY="267.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Return Mercentiging Autherization" textFill="#720440" AnchorPane.leftAnchor="410.0">
+      <Label fx:id="lbl_rma_in_updateproduct" layoutX="403.0" layoutY="337.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Return Mercentiging Autherization" AnchorPane.leftAnchor="403.0">
          <font>
             <Font name="Times New Roman" size="16.0" />
          </font></Label>
-      <Label fx:id="lbl_date_in_updateproduct" layoutX="426.0" layoutY="337.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Date" AnchorPane.leftAnchor="410.0">
+      <Label fx:id="lbl_date_in_updateproduct" layoutX="415.0" layoutY="395.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Date" AnchorPane.leftAnchor="403.0">
          <font>
             <Font name="Times New Roman" size="16.0" />
          </font></Label>
-      <Label fx:id="lbl_productid_in_updateproduct" layoutX="51.0" layoutY="96.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Product ID" AnchorPane.leftAnchor="20.0">
+      <Label fx:id="lbl_productid_in_updateproduct" layoutX="21.0" layoutY="158.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Product ID" AnchorPane.leftAnchor="20.0">
          <font>
             <Font name="Times New Roman" size="16.0" />
          </font></Label>
-      <Label fx:id="lbl_productname_in_updateproduct" layoutX="51.0" layoutY="154.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Product Name" AnchorPane.leftAnchor="20.0">
+      <Label fx:id="lbl_productname_in_updateproduct" layoutX="20.0" layoutY="211.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Product Name" AnchorPane.leftAnchor="20.0">
          <font>
             <Font name="Times New Roman" size="16.0" />
          </font></Label>
-      <Label fx:id="lbl_pprice_in_updateproduct" layoutX="52.0" layoutY="267.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Purchased Price" AnchorPane.leftAnchor="20.0">
+      <Label fx:id="lbl_pprice_in_updateproduct" layoutX="25.0" layoutY="337.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Purchased Price" AnchorPane.leftAnchor="20.0">
          <font>
             <Font name="Times New Roman" size="16.0" />
          </font></Label>
-      <Label fx:id="lbl_quantity_in_updateproduct" layoutX="57.0" layoutY="211.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Quantity" AnchorPane.leftAnchor="20.0">
+      <Label fx:id="lbl_quantity_in_updateproduct" layoutX="28.0" layoutY="279.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Quantity" AnchorPane.leftAnchor="20.0">
          <font>
             <Font name="Times New Roman" size="16.0" />
          </font></Label>
-      <Label fx:id="lbl_sprice_in_updateproduct" layoutX="56.0" layoutY="337.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Sell Price" AnchorPane.leftAnchor="20.0">
+      <Label fx:id="lbl_sprice_in_updateproduct" layoutX="25.0" layoutY="395.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Sell Price" AnchorPane.leftAnchor="20.0">
          <font>
             <Font name="Times New Roman" size="16.0" />
          </font></Label>
-      <TextField fx:id="tf_productid_in_updatesupplier" layoutX="199.0" layoutY="92.0" AnchorPane.leftAnchor="183.0" />
-      <TextField fx:id="tf_productname_in_updatesupplier" layoutX="199.0" layoutY="150.0" AnchorPane.leftAnchor="183.0" />
-      <TextField fx:id="tf_quantity_in_updatesupplier" layoutX="199.0" layoutY="207.0" AnchorPane.leftAnchor="183.0" />
-      <TextField fx:id="tf_pprice_in_updatesupplier" layoutX="199.0" layoutY="263.0" AnchorPane.leftAnchor="183.0" />
-      <TextField fx:id="tf_sprice_in_updatesupplier" layoutX="199.0" layoutY="333.0" AnchorPane.leftAnchor="183.0" />
-      <TextField fx:id="tf_rma_in_updateproduct" layoutX="639.0" layoutY="263.0" prefHeight="25.0" prefWidth="162.0" AnchorPane.rightAnchor="19.0" />
-      <ComboBox fx:id="combo_supname_in_updateproduct" layoutX="644.0" layoutY="92.0" prefHeight="25.0" prefWidth="162.0" AnchorPane.leftAnchor="644.0" AnchorPane.rightAnchor="14.0" />
-      <ComboBox fx:id="combo_brand_in_updateproduct" layoutX="640.0" layoutY="142.0" prefHeight="25.0" prefWidth="162.0" />
-      <ComboBox fx:id="combo_category_in_updateproduct" layoutX="638.0" layoutY="207.0" prefHeight="25.0" prefWidth="162.0" AnchorPane.rightAnchor="20.0" />
-      <DatePicker fx:id="datepicker_date_in_updateproduct" layoutX="635.0" layoutY="321.0" prefHeight="25.0" prefWidth="162.0" AnchorPane.rightAnchor="23.0" />
-      <Button fx:id="btn_updateproduct" layoutX="338.0" layoutY="410.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" styleClass="btn_updateproduct" stylesheets="@MiniCss.css" text="Update">
+      <TextField fx:id="tf_productid_in_updatesupplier" layoutX="183.0" layoutY="155.0" AnchorPane.leftAnchor="183.0" />
+      <TextField fx:id="tf_productname_in_updatesupplier" layoutX="183.0" layoutY="208.0" AnchorPane.leftAnchor="183.0" />
+      <TextField fx:id="tf_quantity_in_updatesupplier" layoutX="183.0" layoutY="274.0" AnchorPane.leftAnchor="183.0" />
+      <TextField fx:id="tf_pprice_in_updatesupplier" layoutX="183.0" layoutY="334.0" AnchorPane.leftAnchor="183.0" />
+      <TextField fx:id="tf_sprice_in_updatesupplier" layoutX="183.0" layoutY="392.0" AnchorPane.leftAnchor="183.0" />
+      <TextField fx:id="tf_rma_in_updateproduct" layoutX="638.0" layoutY="334.0" prefHeight="25.0" prefWidth="162.0" AnchorPane.rightAnchor="20.0" />
+      <ComboBox fx:id="combo_supname_in_updateproduct" layoutX="638.0" layoutY="155.0" prefHeight="25.0" prefWidth="162.0" promptText="Select a Supplier" AnchorPane.leftAnchor="638.0" AnchorPane.rightAnchor="20.0" />
+      <ComboBox fx:id="combo_brand_in_updateproduct" layoutX="658.0" layoutY="208.0" prefHeight="25.0" prefWidth="162.0" promptText="Select a Brand" AnchorPane.rightAnchor="20.0" />
+      <ComboBox fx:id="combo_category_in_updateproduct" layoutX="635.0" layoutY="274.0" prefHeight="25.0" prefWidth="162.0" promptText="Select a Category" AnchorPane.rightAnchor="20.0" />
+      <DatePicker fx:id="datepicker_date_in_updateproduct" layoutX="635.0" layoutY="392.0" prefHeight="25.0" prefWidth="162.0" AnchorPane.rightAnchor="20.0" />
+      <Button fx:id="btn_updateproduct" layoutX="338.0" layoutY="459.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnUpdateProduct" styleClass="btn_updateproduct" stylesheets="@MiniCss.css" text="Update">
          <font>
             <Font name="Arial Black" size="20.0" />
          </font></Button>
-      <Button fx:id="btn_back_in_updateproduct" layoutX="707.0" layoutY="460.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="43.0" prefWidth="84.0" styleClass="btn_back_in_updateproduct" stylesheets="@MiniCss.css" text="Back">
+      <Button fx:id="btn_back_in_updateproduct" layoutX="719.0" layoutY="481.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnBackInUpdateProduct" prefHeight="43.0" prefWidth="84.0" styleClass="btn_back_in_updateproduct" stylesheets="@MiniCss.css" text="Back">
          <font>
             <Font name="Arial Black" size="20.0" />
+         </font></Button>
+      <TextField fx:id="tf_enter_productid_toupdateproducts" layoutX="157.0" layoutY="80.0" prefHeight="36.0" prefWidth="162.0" promptText="Enter Product ID" AnchorPane.topAnchor="80.0">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font></TextField>
+      <Button fx:id="btn_load_productdetails_toupdate" layoutX="508.0" layoutY="80.0" mnemonicParsing="false" onAction="#btnLoadProductDetailsToUpdate" prefHeight="19.0" prefWidth="62.0" styleClass="btn_load_productdetails_toupdate" stylesheets="@MiniCss.css" text="GO" AnchorPane.topAnchor="80.0">
+         <font>
+            <Font name="Arial Black" size="16.0" />
          </font></Button>
    </children>
 </AnchorPane>
