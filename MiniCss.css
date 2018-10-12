@@ -1,57 +1,57 @@
 .root{
-  -fx-background-image:url('pic.jpg');
-  -fx-background-size:cover;
+    -fx-background-image:url('pic.jpg');
+    -fx-background-size:cover;
 }
 
 .btnadmin{
-  -fx-background-color: #0d261a;
-  -fx-text-fill:  #b3ffb3;
+    -fx-background-color: #0d261a;
+    -fx-text-fill:  #b3ffb3;
 }
 .btnadmin:hover{
-  -fx-background-color:  #206020;
-  -fx-border-radius: 10px;
- 
+    -fx-background-color:  #206020;
+    -fx-border-radius: 10px;
+
 }
 .btnauditor{
-  -fx-background-color: #0d261a;
-  -fx-text-fill:  #b3ffb3;
+    -fx-background-color: #0d261a;
+    -fx-text-fill:  #b3ffb3;
 }
 .btnauditor:hover{
- -fx-background-color:  #206020;
-  -fx-border-radius: 10px;
+    -fx-background-color:  #206020;
+    -fx-border-radius: 10px;
 }
 
 .btn_supplier_auditorView{
-   -fx-background-color: #000066 ;
-   -fx-text-alignment: center;
-   -fx-text-fill: #e6ffff;
-   -fx-border-radius: 20px;
+    -fx-background-color: #000066 ;
+    -fx-text-alignment: center;
+    -fx-text-fill: #e6ffff;
+    -fx-border-radius: 20px;
 }
 .btn_brand_auditorView{
-  -fx-background-color: #000066 ;
-   -fx-text-alignment: center;
-   -fx-text-fill: #e6ffff;
-   -fx-border-radius: 20px;
+    -fx-background-color: #000066 ;
+    -fx-text-alignment: center;
+    -fx-text-fill: #e6ffff;
+    -fx-border-radius: 20px;
 }
 .btn_category_auditorView{
-   -fx-background-color: #000066 ;
-   -fx-text-alignment: center;
-   -fx-text-fill: #e6ffff;
-   -fx-border-radius: 20px;
+    -fx-background-color: #000066 ;
+    -fx-text-alignment: center;
+    -fx-text-fill: #e6ffff;
+    -fx-border-radius: 20px;
 }
 .btn_products_auditorView{
-   -fx-background-color: #000066 ;
-   -fx-text-alignment: center;
-   -fx-text-fill: #e6ffff;
-   -fx-border-radius: 20px;
-    
+    -fx-background-color: #000066 ;
+    -fx-text-alignment: center;
+    -fx-text-fill: #e6ffff;
+    -fx-border-radius: 20px;
+
 }
 .btn_supplier_auditorView:hover{
-   -fx-background-color:  #008080;
+    -fx-background-color:  #008080;
 }
 
 .btn_products_auditorView:hover{
-   -fx-background-color:  #008080;
+    -fx-background-color:  #008080;
 }
 .btn_brand_auditorView:hover {
     -fx-background-color:  #008080;
@@ -60,88 +60,88 @@
     -fx-background-color: #008080;
 }
 .btn_add_supplier{
-  -fx-background-color: #000066 ;
-   -fx-text-alignment: center;
-   -fx-text-fill: #e6ffff;
-   -fx-border-radius: 20px;
- }
+    -fx-background-color: #000066 ;
+    -fx-text-alignment: center;
+    -fx-text-fill: #e6ffff;
+    -fx-border-radius: 20px;
+}
 .btn_update_supplier{
-  -fx-background-color: #000066 ;
-   -fx-text-alignment: center;
-   -fx-text-fill: #e6ffff;
-   -fx-border-radius: 20px;
- }
- .btn_delete_supplier{
- -fx-background-color: #000066 ;
-   -fx-text-alignment: center;
-   -fx-text-fill: #e6ffff;
-   -fx-border-radius: 20px;
- }    
- .btn_add_supplier:hover{
+    -fx-background-color: #000066 ;
+    -fx-text-alignment: center;
+    -fx-text-fill: #e6ffff;
+    -fx-border-radius: 20px;
+}
+.btn_delete_supplier{
+    -fx-background-color: #000066 ;
+    -fx-text-alignment: center;
+    -fx-text-fill: #e6ffff;
+    -fx-border-radius: 20px;
+}    
+.btn_add_supplier:hover{
     -fx-background-color: #008080; 
- }
-  .btn_update_supplier:hover{
+}
+.btn_update_supplier:hover{
     -fx-background-color:  #008080; 
- }
-  .btn_delete_supplier:hover{
+}
+.btn_delete_supplier:hover{
     -fx-background-color: #008080; 
- }
- .btn_load_supplier_details{
-     
-   -fx-background-color: #000066 ;
-   -fx-text-alignment: center;
-   -fx-text-fill: #e6ffff;
-   -fx-border-radius: 20px;
- }
- .btn_load_supplier_details:hover{
-     
- -fx-background-color: #008080; 
- }
- .btn_add_supplier1{
-     -fx-background-color: #003399;
-     -fx-text-fill:  #99ffeb;
-     -fx-border-radius:20px;
- }
-.btn_add_supplier1:hover{
-     -fx-background-color:  #6699ff;
-   
- }
- .btn_back_inaddsupplier{
-     -fx-background-color: #003399;
-     -fx-text-fill:  #99ffeb;
-     -fx-border-radius:20px;
- }
- .btn_back_inaddsupplier:hover{
-        -fx-background-color:  #6699ff;  
- }
-.btn_update_supplier1{
-     -fx-background-color: #003399;
-     -fx-text-fill:  #99ffeb;
-     -fx-border-radius:20px;
- }
- .btn_load_supdetails{
-     -fx-background-color: #003399;
-     -fx-text-fill:  #99ffeb;
-     -fx-border-radius:20px;
- }
- .btn_back_inupdatesupplier{
-  -fx-background-color: #003399;
-     -fx-text-fill:  #99ffeb;
-     -fx-border-radius:20px;
- }
+}
+.btn_load_supplier_details{
 
- .btn_load_supdetails_todelete{
-      -fx-background-color: #003399;
-     -fx-text-fill:  #99ffeb;
-     -fx-border-radius:20px;
+    -fx-background-color: #000066 ;
+    -fx-text-alignment: center;
+    -fx-text-fill: #e6ffff;
+    -fx-border-radius: 20px;
+}
+.btn_load_supplier_details:hover{
+
+    -fx-background-color: #008080; 
+}
+.btn_add_supplier1{
+    -fx-background-color: #003399;
+    -fx-text-fill:  #99ffeb;
+    -fx-border-radius:20px;
+}
+.btn_add_supplier1:hover{
+    -fx-background-color:  #6699ff;
+
+}
+.btn_back_inaddsupplier{
+    -fx-background-color: #003399;
+    -fx-text-fill:  #99ffeb;
+    -fx-border-radius:20px;
+}
+.btn_back_inaddsupplier:hover{
+    -fx-background-color:  #6699ff;  
+}
+.btn_update_supplier1{
+    -fx-background-color: #003399;
+    -fx-text-fill:  #99ffeb;
+    -fx-border-radius:20px;
+}
+.btn_load_supdetails{
+    -fx-background-color: #003399;
+    -fx-text-fill:  #99ffeb;
+    -fx-border-radius:20px;
+}
+.btn_back_inupdatesupplier{
+    -fx-background-color: #003399;
+    -fx-text-fill:  #99ffeb;
+    -fx-border-radius:20px;
+}
+
+.btn_load_supdetails_todelete{
+    -fx-background-color: #003399;
+    -fx-text-fill:  #99ffeb;
+    -fx-border-radius:20px;
 }
 .btn_load_supdetails_todelete:hover{
-  -fx-background-color:  #6699ff;    
+    -fx-background-color:  #6699ff;    
 }
 .btn_delete_suppliers{
-      -fx-background-color: #003399;
-     -fx-text-fill:  #99ffeb;
-     -fx-border-radius:20px;   
+    -fx-background-color: #003399;
+    -fx-text-fill:  #99ffeb;
+    -fx-border-radius:20px;   
 }
 .btn_delete_suppliers:hover{
     -fx-background-color:  #6699ff; 
@@ -206,35 +206,35 @@
 }
 
 .btn_update_brand{
-     -fx-background-color:#00cc00 ;
+    -fx-background-color:#00cc00 ;
     -fx-text-fill:  #004d00;
 }
 .btn_update_brand:hover{
     -fx-background-color:#ccffcc;
 }
 .btn_back_in_updatebrand{
-        -fx-background-color:#00cc00 ;
+    -fx-background-color:#00cc00 ;
     -fx-text-fill:  #004d00;  
 }
 .btn_back_in_updatebrand:hover{
     -fx-background-color:#ccffcc;
 }
 .btn_load_branddetails{
-     -fx-background-color:#00cc00 ;
+    -fx-background-color:#00cc00 ;
     -fx-text-fill:  #004d00; 
 }
 .btn_load_branddetails:hover{
-      -fx-background-color:#ccffcc;
+    -fx-background-color:#ccffcc;
 }
 .btn_load_branddetails_todelete{
-      -fx-background-color:#00cc00 ;
+    -fx-background-color:#00cc00 ;
     -fx-text-fill:  #004d00;  
 }
 .btn_load_branddetails_todelete:hover{
     -fx-background-color:#ccffcc;
 }
 .btn_delete_brand{
-     -fx-background-color:#00cc00 ;
+    -fx-background-color:#00cc00 ;
     -fx-text-fill:  #004d00;
 }
 .btn_delete_brand:hover{
@@ -245,7 +245,7 @@
     -fx-text-fill:  #004d00;
 }
 .btn_back_in_deletebrand:hover{
-     -fx-background-color:#ccffcc;
+    -fx-background-color:#ccffcc;
 }
 .btn_add_catg{
     -fx-background-color:#bf4040;
@@ -259,7 +259,7 @@
     -fx-text-fill:  #4d0000 ; 
 }
 .btn_back_in_addcatg:hover{
-     -fx-background-color: #ecc6c6;
+    -fx-background-color: #ecc6c6;
 }
 .btn_load_catgdetails{
     -fx-background-color:  #802b00;
@@ -269,109 +269,109 @@
     -fx-background-color:  #ffeee6; 
 }
 .btn_addcatg{
-  -fx-background-color:  #802b00;
-  -fx-text-fill:   #ffb366 ;   
+    -fx-background-color:  #802b00;
+    -fx-text-fill:   #ffb366 ;   
 }
 .btn_addcatg:hover{
- -fx-background-color:  #ffeee6;  
+    -fx-background-color:  #ffeee6;  
 }
 .btn_updatecatg{
-  -fx-background-color:  #802b00;
-  -fx-text-fill:   #ffb366 ;   
+    -fx-background-color:  #802b00;
+    -fx-text-fill:   #ffb366 ;   
 }
 .btn_updatecatg:hover{
-   -fx-background-color:  #ffeee6;   
+    -fx-background-color:  #ffeee6;   
 }
 .btn_deletecatg{
-  -fx-background-color:  #802b00;
-  -fx-text-fill:   #ffb366 ;    
+    -fx-background-color:  #802b00;
+    -fx-text-fill:   #ffb366 ;    
 }
 .btn_deletecatg:hover{
     -fx-background-color:  #ffeee6;  
 }
 .btn_back_in_catgoverview{
     -fx-background-color:  #802b00;
-  -fx-text-fill:   #ffb366 ;   
- }
+    -fx-text-fill:   #ffb366 ;   
+}
 .btn_back_in_catgoverview:hover{
-   -fx-background-color:  #ffeee6;  
+    -fx-background-color:  #ffeee6;  
 }
 .btn_load_catgdetails_toupdate{
-  -fx-background-color:#bf4040;
-  -fx-text-fill:  #4d0000 ;   
+    -fx-background-color:#bf4040;
+    -fx-text-fill:  #4d0000 ;   
 }
 .btn_load_catgdetails_toupdate:hover{
-   -fx-background-color: #ecc6c6;
+    -fx-background-color: #ecc6c6;
 }
 .btn_update_catg{
-  -fx-background-color:#bf4040;
-  -fx-text-fill:  #4d0000 ;    
+    -fx-background-color:#bf4040;
+    -fx-text-fill:  #4d0000 ;    
 }
 .btn_update_catg:hover{
- -fx-background-color: #ecc6c6;   
+    -fx-background-color: #ecc6c6;   
 }
 .btn_back_in_updatecatg{
- -fx-background-color:#bf4040;
-  -fx-text-fill:  #4d0000 ;     
+    -fx-background-color:#bf4040;
+    -fx-text-fill:  #4d0000 ;     
 }
 .btn_back_in_updatecatg{
--fx-background-color: #ecc6c6;     
+    -fx-background-color: #ecc6c6;     
 }
 .btn_load_catgdetails_todelete{
-     -fx-background-color:#bf4040;
-  -fx-text-fill:  #4d0000 ; 
+    -fx-background-color:#bf4040;
+    -fx-text-fill:  #4d0000 ; 
 }
 .btn_load_catgdetails_todelete:hover{
-   -fx-background-color: #ecc6c6; 
+    -fx-background-color: #ecc6c6; 
 }
 .btn_delete_catg{
-       -fx-background-color:#bf4040;
-  -fx-text-fill:  #4d0000 ;   
+    -fx-background-color:#bf4040;
+    -fx-text-fill:  #4d0000 ;   
 }
 .btn_delete_catg:hover{
-  -fx-background-color: #ecc6c6;   
+    -fx-background-color: #ecc6c6;   
 }
 .btn_back_in_deletecatg{
-   -fx-background-color:#bf4040;
-  -fx-text-fill:  #4d0000 ;  
+    -fx-background-color:#bf4040;
+    -fx-text-fill:  #4d0000 ;  
 }
 .btn_back_in_deletecatg:hover{
     -fx-background-color: #ecc6c6;  
 }
 .btn_load_productdetails{
-  -fx-background-color:  #990073;
--fx-text-fill:  #ff66ff; 
+    -fx-background-color:  #990073;
+    -fx-text-fill:  #ff66ff; 
 }
 .btn_load_productdetails:hover{
     -fx-background-color:  #ffe6ff;
 }
 .btn_addproduct{
-   -fx-background-color:  #990073;
-   -fx-text-fill:  #ff66ff;    
+    -fx-background-color:  #990073;
+    -fx-text-fill:  #ff66ff;    
 }
 .btn_addproduct:hover{
-  -fx-background-color:  #ffe6ff;   
+    -fx-background-color:  #ffe6ff;   
 }
 .btn_updateproduct{
--fx-background-color:  #990073;
--fx-text-fill:  #ff66ff;    
+    -fx-background-color:  #990073;
+    -fx-text-fill:  #ff66ff;    
 }
 .btn_updateproduct:hover{
-  -fx-background-color:  #ffe6ff;  
+    -fx-background-color:  #ffe6ff;  
 }
 .btn_deleteproduct{
--fx-background-color:  #990073;
--fx-text-fill:  #ff66ff;    
+    -fx-background-color:  #990073;
+    -fx-text-fill:  #ff66ff;    
 }
 .btn_deleteproduct:hover{
     -fx-background-color:  #ffe6ff;    
 }
 .btn_back_in_product{
- -fx-background-color:  #990073;
--fx-text-fill:  #ff66ff;    
+    -fx-background-color:  #990073;
+    -fx-text-fill:  #ff66ff;    
 }
 .btn_back_in_product:hover{
-     -fx-background-color:  #ffe6ff;    
+    -fx-background-color:  #ffe6ff;    
 }
 .btn_add_inaddproduct{
     -fx-background-color:  #660022;
@@ -385,26 +385,83 @@
     -fx-text-fill:  #ff4d88;
 }
 .btn_back_in_addproduct:hover{
-   -fx-background-color:#e60073;  
+    -fx-background-color:#e60073;  
 }
 .btn_updateproduct{
-   -fx-background-color:  #660022;
-    -fx-text-fill:  #ff4d88;   
+    -fx-background-color:  #660022;
+    -fx-text-fill:  #ff4d88; 
 }
 .btn_updateproduct:hover{
-     -fx-background-color:#e60073;    
+   -fx-background-color:#e60073;    
 }
 .btn_back_in_updateproduct{
-   -fx-background-color:  #660022;
+    -fx-background-color:  #660022;
     -fx-text-fill:  #ff4d88;     
 }
 .btn_back_in_updateproduct:hover{
-     -fx-background-color:#e60073;
+    -fx-background-color:#e60073;
 }
 .btn_load_productdetails_toupdate{
     -fx-background-color:  #660022;
     -fx-text-fill:  #ff4d88;   
 }
 .btn_load_productdetails_toupdate:hover{
-     -fx-background-color:#e60073;
+    -fx-background-color:#e60073;
+}
+.btn_load_productdetails_todelete{
+    -fx-background-color:  #660022;
+    -fx-text-fill:  #ff4d88; 
+}
+.btn_load_productdetails_todelete:hover{
+      -fx-background-color:#e60073;
+}
+.btn_deleteproduct{
+    -fx-background-color:  #660022;
+    -fx-text-fill:  #ff4d88; 
+}
+.btn_deleteproduct:hover{
+      -fx-background-color:#e60073; 
+}
+.btn_back_in_deleteproduct{
+   -fx-background-color:  #660022;
+    -fx-text-fill:  #ff4d88;  
+}
+.btn_back_in_deleteproduct:hover{
+     -fx-background-color:#e60073; 
+}
+
+.btn_load_summarydetails{
+    -fx-background-color: #0066cc;
+    -fx-text-fill:  #e6f2ff;
+}
+.btn_load_summarydetails:hover{
+    -fx-background-color:  #1a8cff;
+}
+.btn_delete_summary{
+    -fx-background-color: #0066cc;
+    -fx-text-fill:  #e6f2ff;  
+}
+.btn_delete_summary:hover{
+    -fx-background-color:  #1a8cff;
+}
+.btn_edit_pprice_in_summaryview{
+    -fx-background-color: #0066cc;
+    -fx-text-fill:  #e6f2ff;   
+}
+.btn_edit_pprice_in_summaryview:hover{
+    -fx-background-color:  #1a8cff; 
+}
+.btn_addauditor_in_summaryview{
+    -fx-background-color: #0066cc;
+    -fx-text-fill:  #e6f2ff;   
+}
+.btn_addauditor_in_summaryview:hover{
+    -fx-background-color:  #1a8cff;    
+}
+.btn_email_in_summaryview{
+    -fx-background-color: #0066cc;
+    -fx-text-fill:  #e6f2ff;   
+}
+.btn_email_in_summaryview:hover{
+    -fx-background-color:  #1a8cff;    
 }
