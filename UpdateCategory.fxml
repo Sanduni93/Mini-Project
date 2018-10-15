@@ -8,25 +8,24 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" fx:id="UpdateCategoryOverview" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="650.0" style="-fx-background-color: #d27979;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="main.UpdateCategoryController">
+<AnchorPane id="AnchorPane" fx:id="UpdateCategoryOverview" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="650.0" style="-fx-background-color: #d27979;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.UpdateCategoryController">
    <children>
-      <Label fx:id="lbl_updatecatg" layoutX="263.0" layoutY="19.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="149.0" text="Update Category" textFill="#610606">
+      <Label fx:id="lbl_updatecatg" layoutX="263.0" layoutY="19.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="149.0" text="Update Category" textFill="#610606" AnchorPane.topAnchor="19.0">
          <font>
             <Font name="Bodoni MT Black" size="18.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_catgid_inupdatecatg" layoutX="97.0" layoutY="135.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Category ID" textFill="#650606" AnchorPane.leftAnchor="97.0">
+      <Label fx:id="lbl_catgid_inupdatecatg" layoutX="97.0" layoutY="135.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Category ID" textFill="#650606" AnchorPane.leftAnchor="97.0" AnchorPane.topAnchor="135.0">
          <font>
             <Font name="Gill Sans MT" size="16.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_catgname_inupdatecatg" layoutX="97.0" layoutY="171.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Category Name" textFill="#650606" AnchorPane.leftAnchor="97.0">
+      <Label fx:id="lbl_catgname_inupdatecatg" layoutX="97.0" layoutY="171.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Category Name" textFill="#650606" AnchorPane.leftAnchor="97.0" AnchorPane.topAnchor="171.0">
          <font>
             <Font name="Gill Sans MT" size="16.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_brands_inupdatecatg" layoutX="98.0" layoutY="210.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Brand" textFill="#650606" AnchorPane.leftAnchor="97.0">
+      <Label fx:id="lbl_brands_inupdatecatg" layoutX="94.0" layoutY="209.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Brand" textFill="#650606" AnchorPane.leftAnchor="97.0" AnchorPane.topAnchor="209.0">
          <font>
             <Font name="Gill Sans MT" size="16.0" />
          </font>
@@ -50,20 +49,20 @@
       <TextField fx:id="tf_catgname_in_updatecatg" layoutX="368.0" layoutY="167.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="174.0" style="-fx-background-color: transparent; -fx-border-color: #660000; -fx-border-width: 0px 0px 2px 0px;" AnchorPane.leftAnchor="368.0" />
       <ComboBox fx:id="combo_brandname_in_updatecatg" layoutX="368.0" layoutY="206.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="174.0" promptText="Select a Brand" style="-fx-border-color: #660000;" AnchorPane.leftAnchor="368.0" />
       <ComboBox fx:id="combo_supname_in_updatecatg" layoutX="368.0" layoutY="245.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="174.0" promptText="Select a Supplier" style="-fx-border-color: #660000;" AnchorPane.leftAnchor="368.0" />
-      <DatePicker fx:id="datepicker_date_in_updatecatg" layoutX="368.0" layoutY="293.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-border-color: #660000;" AnchorPane.leftAnchor="368.0" />
+      <DatePicker fx:id="datepicker_date_in_updatecatg" layoutX="368.0" layoutY="293.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" promptText="Select a Date" style="-fx-border-color: #660000;" AnchorPane.leftAnchor="368.0" />
       <TextField fx:id="tf_des_in_updatecatg" layoutX="368.0" layoutY="352.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="174.0" style="-fx-background-color: transparent; -fx-border-color: #660000; -fx-border-width: 0px 0px 2px 0px;" AnchorPane.leftAnchor="368.0" />
-      <TextField fx:id="tf_enter_catgid_toupdate" layoutX="106.0" layoutY="76.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" promptText="Enter Category ID" />
-      <Button fx:id="btn_load_catgdetails_toupdate" layoutX="412.0" layoutY="71.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnGoToUpdateCategoryDetails" prefHeight="36.0" prefWidth="67.0" styleClass="btn_load_catgdetails_toupdate" stylesheets="@MiniCss.css" text="GO">
+      <TextField fx:id="tf_enter_catgid_toupdate" layoutX="106.0" layoutY="76.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" promptText="Enter Category ID" AnchorPane.leftAnchor="106.0" AnchorPane.topAnchor="76.0" />
+      <Button fx:id="btn_load_catgdetails_toupdate" layoutX="412.0" layoutY="71.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnGoToLoadCatgDetailsToUpdate" prefHeight="36.0" prefWidth="67.0" styleClass="btn_load_catgdetails_toupdate" stylesheets="@MiniCss.css" text="GO" AnchorPane.leftAnchor="412.0" AnchorPane.topAnchor="76.0">
          <font>
             <Font name="Arial Black" size="16.0" />
          </font>
       </Button>
-      <Button fx:id="btn_update_catg" layoutX="285.0" layoutY="399.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnUpdateCategory" styleClass="btn_update_catg" stylesheets="@MiniCss.css" text="Update">
+      <Button fx:id="btn_update_catg" layoutX="274.0" layoutY="394.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnUpdateCategory" styleClass="btn_update_catg" stylesheets="@MiniCss.css" text="Update" AnchorPane.leftAnchor="274.0">
          <font>
             <Font name="Arial Black" size="16.0" />
          </font>
       </Button>
-      <Button fx:id="btn_back_in_updatecatg" layoutX="467.0" layoutY="430.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnGoBackToCategoryOverviewInUpdateCatg" styleClass="btn_back_in_updatecatg" stylesheets="@MiniCss.css" text="Back">
+      <Button fx:id="btn_back_in_updatecatg" layoutX="467.0" layoutY="430.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" styleClass="btn_back_in_updatecatg" stylesheets="@MiniCss.css" text="Back">
          <font>
             <Font name="Arial Black" size="16.0" />
          </font>
