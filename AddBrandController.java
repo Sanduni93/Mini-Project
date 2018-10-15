@@ -101,7 +101,7 @@ ResultSet rs = null;
           String bid = tf_brandid.getText();
           String bname = tf_brandname.getText();
           String supname = combo_supname.getValue();
-          String newdate = datepicker_date.getEditor().getText();
+          String newdate = ((TextField)datepicker_date.getEditor()).getText();
           String des = tf_desinaddbrand.getText();
        try{
            String sql = "INSERT INTO addbrandstable (brandid,brandname,supname,date,des) VALUES (?,?,?,?,?)";
@@ -123,6 +123,7 @@ ResultSet rs = null;
         }
         tf_brandid.clear();
         tf_brandname.clear();
+        datepicker_date.setValue(null);
         tf_desinaddbrand.clear();
     }
      //go back to brand overview
