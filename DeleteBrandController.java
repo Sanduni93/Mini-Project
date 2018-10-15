@@ -116,7 +116,7 @@ public class DeleteBrandController implements Initializable {
      public void btn_load_branddetails_todelete(ActionEvent event)
      {
        DeleteBrandController.Function2 f = new DeleteBrandController.Function2();
-       ResultSet rs = null;
+      
        String brandid= "brandid";
        String brandname = "brandname";
        String supname = "supname";
@@ -148,7 +148,7 @@ public class DeleteBrandController implements Initializable {
      
      //detele brand details
         @FXML
-     public void btnDeleteBrand(ActionEvent event){
+     public void btnDeleteBrand(ActionEvent event) throws SQLException{
          
          String sql="delete from addbrandstable where brandid=?";
          try
@@ -163,7 +163,16 @@ public class DeleteBrandController implements Initializable {
          catch(Exception e)
          {
           JOptionPane.showMessageDialog(null, e);
-         }    
+         } 
+         finally {
+            pst.execute();
+            pst.close();
+        }
+         tf_enter_brandid_todelete.clear();
+        tf_brandid_indeletebrand.clear();
+        tf_brandname_indeletebrand.clear();
+        datepicker_date_indeletebrand.setValue(null);
+         tf_des_indeletebrand.clear();
      
      }
      
