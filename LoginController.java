@@ -1,8 +1,17 @@
 package main;
 
+import Dialog.AlertDialogInsert;
 import java.io.IOException;
 import java.net.URL;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -33,45 +42,64 @@ public class LoginController implements Initializable {
     @FXML
     private Button btn_auditor;
 
+    private DBConnector db;
+    private Connection conn = null;
+    private PreparedStatement pst = null;
+    ResultSet rs = null;
+
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        db = new DBConnector();
+    }
+
     @FXML
     private void handlebtn_admin(ActionEvent event) throws IOException {
-
-        if (tf_username.getText().equals("admin") && pwf_pass.getText().equals("admin")) {
+        if (tf_username.getText().equals("") && pwf_pass.getText().equals("")) {
             Parent adminView = FXMLLoader.load(getClass().getResource("SummaryView.fxml"));
             Scene admin_scene = new Scene(adminView);
 
             Stage admin_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             admin_stage.setScene(admin_scene);
             admin_stage.show();
-        }
-        else {
-            JOptionPane.showMessageDialog(null, "This username or password or both of Admin is Extremly Wrong!\nClick ok and try again.",
-                    "Wrong pass", JOptionPane.ERROR_MESSAGE);
-        }
-
-    }
-
-    //for auditor view
-    @FXML
-    private void handlebtn_auditor(ActionEvent event) throws IOException {
-
-        if (tf_username.getText().equals("") && pwf_pass.getText().equals("")) {
-            Parent auditorView = FXMLLoader.load(getClass().getResource("AuditorView.fxml"));
-            Scene auditor_scene = new Scene(auditorView);
-
-            Stage auditor_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            auditor_stage.setScene(auditor_scene);
-            auditor_stage.show();
-
         } else {
             JOptionPane.showMessageDialog(null, "This username or password or both of Admin is Extremly Wrong!\nClick ok and try again.",
                     "Wrong pass", JOptionPane.ERROR_MESSAGE);
         }
-
     }
 
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
+    //for auditor view
+    @FXML
+    public void handlebtn_auditor(ActionEvent event) throws IOException {
+        //  DBConnector db = new DBConnector();
+        Connection conn = db.Connect();
+
+        String username = tf_username.getText();
+        String password = pwf_pass.getText();
+        
+        try {
+            conn = DriverManager.getConnection("jdbc:mysql://localhost/elecdesk", "root", "");
+            pst = conn.prepareStatement("select username,password from addauditorstable where username='" + tf_username.getText() + "' and password = '" + pwf_pass.getText() + "'");
+            rs = pst.executeQuery();
+
+            if (rs.next()) {
+
+                    if (username.equals(rs.getString("username")) && password.equals(rs.getString("password"))) {
+                    Parent auditorView = FXMLLoader.load(getClass().getResource("AuditorView.fxml"));
+                    Scene auditor_scene = new Scene(auditorView);
+
+                    Stage auditor_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                    auditor_stage.setScene(auditor_scene);
+                } 
+            }
+            else{
+            AlertDialogInsert.display("connection", "Sorry!!..\n You are not granted");
+            }
+
+        } catch (SQLException ex) {
+            
+            JOptionPane.showMessageDialog(null, ex);
+
+        }
 
     }
 
