@@ -4,43 +4,54 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-border-width: 0px 0px 2px 0px;" styleClass="root" stylesheets="@MiniCss.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.LoginController">
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="784.0" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-radius: 10px;" styleClass="root" stylesheets="@MiniCss.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.LoginController">
    <children>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="200.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="100.0" fitWidth="120.0" layoutX="255.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@loginimg.jpg" />
-         </image>
-      </ImageView>
-      <Label layoutX="210.0" layoutY="43.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="WELCOME TO ELECTROCITY" textFill="#070580">
+      <AnchorPane fx:id="pane_to_login" layoutX="338.0" layoutY="53.0" prefHeight="465.0" prefWidth="401.0" style="-fx-border-radius: 50px;" styleClass="pane_to_login" stylesheets="@MiniCss.css">
+         <children>
+            <TextField fx:id="tf_username" layoutX="67.0" layoutY="222.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="285.0" promptText="User Name" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 1px 1px 1px 1px; -fx-border-radius: 20px; -fx-border-color: #1a0d00;" styleClass="tf_username" stylesheets="@MiniCss.css">
+               <font>
+                  <Font name="Cambria" size="18.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="pwf_pass" layoutX="67.0" layoutY="290.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="285.0" promptText="Password" style="-fx-border-color: white; -fx-border-width: 1px 1px 1px 1px; -fx-background-color: transparent; -fx-border-radius: 20px; -fx-border-color: #1a0d00;" styleClass="pwf_pass" stylesheets="@MiniCss.css">
+               <font>
+                  <Font name="Cambria" size="18.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="btn_auditor" layoutX="276.0" layoutY="372.0" mnemonicParsing="false" onAction="#handlebtn_auditor" styleClass="btnauditor" stylesheets="@MiniCss.css" text="Auditor" AnchorPane.bottomAnchor="61.0" AnchorPane.rightAnchor="49.0">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_admin" layoutX="67.0" layoutY="372.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handlebtn_admin" prefHeight="32.0" prefWidth="76.0" styleClass="btnadmin" stylesheets="@MiniCss.css" text="Admin" AnchorPane.bottomAnchor="61.0" AnchorPane.leftAnchor="67.0">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="54.0" layoutY="117.0" prefHeight="55.0" prefWidth="207.0" text="WELCOME" textAlignment="CENTER" textFill="#f2f2f2">
          <font>
-            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+            <Font name="Baskerville Old Face" size="36.0" />
          </font>
       </Label>
-      <TextField fx:id="tf_username" layoutX="240.0" layoutY="250.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" promptText="User Name" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;">
+      <Label layoutX="131.0" layoutY="215.0" text="TO" textAlignment="CENTER" textFill="#f2f2f2">
          <font>
-            <Font name="Arial Black" size="14.0" />
+            <Font name="Baskerville Old Face" size="36.0" />
          </font>
-      </TextField>
-      <PasswordField fx:id="pwf_pass" layoutX="240.0" layoutY="318.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" promptText="Password" style="-fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-background-color: transparent;">
+      </Label>
+      <Label layoutX="31.0" layoutY="305.0" text="ELECTROCITY" textFill="#f2f2f2">
          <font>
-            <Font name="Arial Black" size="14.0" />
+            <Font name="Baskerville Old Face" size="36.0" />
          </font>
-      </PasswordField>
-      <Button fx:id="btn_admin" layoutX="101.0" layoutY="419.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handlebtn_admin" styleClass="btnadmin" stylesheets="@MiniCss.css" text="Admin" AnchorPane.bottomAnchor="56.0" AnchorPane.leftAnchor="120.0">
+      </Label>
+      <Label layoutX="31.0" layoutY="450.0" prefHeight="17.0" prefWidth="194.0" text="Stock Keeper" textFill="#7a7e80">
          <font>
-            <Font name="Arial Black" size="14.0" />
+            <Font name="Baskerville Old Face" size="18.0" />
          </font>
-      </Button>
-      <Button fx:id="btn_auditor" layoutX="467.0" layoutY="419.0" mnemonicParsing="false" onAction="#handlebtn_auditor" styleClass="btnauditor" stylesheets="@MiniCss.css" text="Auditor" AnchorPane.bottomAnchor="56.0" AnchorPane.rightAnchor="120.0">
-         <font>
-            <Font name="Arial Black" size="14.0" />
-         </font>
-      </Button>
+      </Label>
    </children>
 </AnchorPane>
