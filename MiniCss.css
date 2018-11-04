@@ -1,101 +1,119 @@
 .root{
-    -fx-background-image:url('pic.jpg');
-    -fx-background-size:cover;
+   -fx-background-image:url('texture1.jpg');
+   -fx-background-size:cover;
 }
-
+.tf_username{
+    -fx-prompt-text-fill:#663300;
+}
+.pane_to_login{
+    -fx-background-image:url('texture2.jpg'); 
+}
+.pwf_pass{
+    -fx-prompt-text-fill:#663300;
+}
 .btnadmin{
-    -fx-background-color: #0d261a;
-    -fx-text-fill:  #b3ffb3;
+    -fx-background-color:#ffffcc;
+    -fx-text-fill:#663300;
+    -fx-border-radius:30px;
 }
 .btnadmin:hover{
-    -fx-background-color:  #206020;
-    -fx-border-radius: 10px;
-
+    -fx-background-color:#994d00;
 }
 .btnauditor{
-    -fx-background-color: #0d261a;
-    -fx-text-fill:  #b3ffb3;
+    -fx-background-color:#ffffcc;
+    -fx-text-fill:#663300;
 }
 .btnauditor:hover{
-    -fx-background-color:  #206020;
-    -fx-border-radius: 10px;
+    -fx-background-color:#994d00;
+    -fx-border-radius:10px;
 }
-
+.adminView{
+-fx-background-image: url('image3.jpg');    
+}
+.auditorView{
+    -fx-background-image:url('image4.1.jpg');
+}
 .btn_supplier_auditorView{
-    -fx-background-color: #000066 ;
+    -fx-background-color:  #66ff66 ;
     -fx-text-alignment: center;
-    -fx-text-fill: #e6ffff;
+    -fx-text-fill:  #003300;
     -fx-border-radius: 20px;
 }
 .btn_brand_auditorView{
-    -fx-background-color: #000066 ;
+    -fx-background-color: #66ff66 ;
     -fx-text-alignment: center;
-    -fx-text-fill: #e6ffff;
+    -fx-text-fill: #003300;
     -fx-border-radius: 20px;
 }
 .btn_category_auditorView{
-    -fx-background-color: #000066 ;
+    -fx-background-color:  #66ff66 ;
     -fx-text-alignment: center;
-    -fx-text-fill: #e6ffff;
+    -fx-text-fill: #003300;
     -fx-border-radius: 20px;
 }
 .btn_products_auditorView{
-    -fx-background-color: #000066 ;
+    -fx-background-color:  #66ff66 ;
     -fx-text-alignment: center;
-    -fx-text-fill: #e6ffff;
+    -fx-text-fill: #003300;
     -fx-border-radius: 20px;
-
 }
 .btn_supplier_auditorView:hover{
-    -fx-background-color:  #008080;
+    -fx-background-color:  #ccffcc;
 }
-
 .btn_products_auditorView:hover{
-    -fx-background-color:  #008080;
+    -fx-background-color:  #ccffcc;
 }
 .btn_brand_auditorView:hover {
-    -fx-background-color:  #008080;
+    -fx-background-color:  #ccffcc;
 }
 .btn_category_auditorView:hover{
-    -fx-background-color: #008080;
+    -fx-background-color: #ccffcc;
 }
 .btn_add_supplier{
-    -fx-background-color: #000066 ;
+    -fx-background-color: #66ff66 ;
     -fx-text-alignment: center;
-    -fx-text-fill: #e6ffff;
+    -fx-text-fill: #003300;
     -fx-border-radius: 20px;
 }
 .btn_update_supplier{
-    -fx-background-color: #000066 ;
+    -fx-background-color: #66ff66 ;
     -fx-text-alignment: center;
-    -fx-text-fill: #e6ffff;
+    -fx-text-fill: #003300;
     -fx-border-radius: 20px;
 }
 .btn_delete_supplier{
-    -fx-background-color: #000066 ;
+    -fx-background-color: #66ff66 ;
     -fx-text-alignment: center;
-    -fx-text-fill: #e6ffff;
+    -fx-text-fill: #003300;
     -fx-border-radius: 20px;
 }    
 .btn_add_supplier:hover{
-    -fx-background-color: #008080; 
+    -fx-background-color: #ccffcc; 
 }
 .btn_update_supplier:hover{
-    -fx-background-color:  #008080; 
+    -fx-background-color:  #ccffcc; 
 }
 .btn_delete_supplier:hover{
-    -fx-background-color: #008080; 
+    -fx-background-color: #ccffcc; 
 }
 .btn_load_supplier_details{
 
-    -fx-background-color: #000066 ;
+    -fx-background-color: #66ff66 ;
     -fx-text-alignment: center;
-    -fx-text-fill: #e6ffff;
+    -fx-text-fill: #003300;
     -fx-border-radius: 20px;
 }
 .btn_load_supplier_details:hover{
-
-    -fx-background-color: #008080; 
+    -fx-background-color:   #ccffcc; 
+}
+.btn_back_in_auditorview{
+    -fx-background-color: #66ff66 ;
+    -fx-text-alignment: center;
+    -fx-text-fill: #003300;
+    -fx-border-radius: 20px;  
+}
+.btn_back_in_auditorview:hover{
+  -fx-background-color:   #ccffcc;   
 }
 .btn_add_supplier1{
     -fx-background-color: #003399;
@@ -104,7 +122,6 @@
 }
 .btn_add_supplier1:hover{
     -fx-background-color:  #6699ff;
-
 }
 .btn_back_inaddsupplier{
     -fx-background-color: #003399;
@@ -168,7 +185,6 @@
 .btn_back_in_addbrand:hover{
     -fx-background-color:#ccffcc;
 }
-
 .btn_load_brands{
     -fx-background-color:  #cc0052;
     -fx-text-fill:  #ff66b3;
@@ -431,37 +447,47 @@
 }
 
 .btn_load_summarydetails{
-    -fx-background-color: #0066cc;
-    -fx-text-fill:  #e6f2ff;
+    -fx-background-color:  #ffffb3;
+    -fx-text-fill:    #331100;
 }
 .btn_load_summarydetails:hover{
-    -fx-background-color:  #1a8cff;
+    -fx-background-color:   #ffffe6;
 }
 .btn_delete_summary{
-    -fx-background-color: #0066cc;
-    -fx-text-fill:  #e6f2ff;  
+    -fx-background-color: #ffffb3;
+    -fx-text-fill:  #331100;  
 }
 .btn_delete_summary:hover{
-    -fx-background-color:  #1a8cff;
+    -fx-background-color:  #ffffe6;
 }
 .btn_edit_pprice_in_summaryview{
-    -fx-background-color: #0066cc;
-    -fx-text-fill:  #e6f2ff;   
+    -fx-background-color: #ffffb3;
+    -fx-text-fill:  #331100;   
 }
 .btn_edit_pprice_in_summaryview:hover{
-    -fx-background-color:  #1a8cff; 
+    -fx-background-color:  #ffffe6; 
 }
 .btn_addauditor_in_summaryview{
-    -fx-background-color: #0066cc;
-    -fx-text-fill:  #e6f2ff;   
+    -fx-background-color: #ffffb3;
+    -fx-text-fill:  #331100;   
 }
 .btn_addauditor_in_summaryview:hover{
-    -fx-background-color:  #1a8cff;    
+    -fx-background-color:  #ffffe6;    
 }
 .btn_email_in_summaryview{
-    -fx-background-color: #0066cc;
-    -fx-text-fill:  #e6f2ff;   
+    -fx-background-color: #ffffb3;
+    -fx-text-fill:  #331100;   
 }
 .btn_email_in_summaryview:hover{
-    -fx-background-color:  #1a8cff;    
+    -fx-background-color:  #ffffe6;    
+}
+.btn_back_in_summaryview{
+   -fx-background-color: #ffffb3;
+   -fx-text-fill:  #331100;     
+}
+.btn_back_in_summaryview:hover{
+    -fx-background-color:  #ffffe6;   
+}
+.pane_for_image{
+    -fx-background-image: url('image2.jpg');
 }
