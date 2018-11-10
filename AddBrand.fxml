@@ -4,49 +4,50 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="AddBrandOverview" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="620.0" style="-fx-background-color: #4dff4d;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.AddBrandController">
+<AnchorPane id="AnchorPane" fx:id="AddBrandOverview" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1366.0" style="-fx-border-color: #4d0026; -fx-border-width: 5px;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.AddBrandController">
    <children>
-      <Label fx:id="lbl_addbrand" layoutX="234.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="180.0" text="Add Brand" textFill="#073203" AnchorPane.leftAnchor="234.0" AnchorPane.rightAnchor="208.0">
+      <Label fx:id="lbl_addbrand" layoutX="600.0" layoutY="33.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="147.0" text="ADD BRAND" textFill="#570352" AnchorPane.leftAnchor="595.0" AnchorPane.rightAnchor="624.0">
          <font>
             <Font name="Bodoni MT Black" size="18.0" />
          </font></Label>
-      <Label fx:id="lbl_brandname" layoutX="120.0" layoutY="151.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Brand Name" textFill="#0b4d0a" AnchorPane.leftAnchor="123.0">
+      <Label fx:id="lbl_brandname" layoutX="430.0" layoutY="167.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Brand Name" textFill="#570352" AnchorPane.leftAnchor="434.0">
          <font>
-            <Font name="Gill Sans MT" size="16.0" />
+            <Font name="Calibri" size="24.0" />
          </font></Label>
-      <Label fx:id="lbl_supnameinaddbrand" layoutX="118.0" layoutY="201.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Supplied by" textFill="#0b4d0a" AnchorPane.leftAnchor="123.0">
+      <Label fx:id="lbl_supnameinaddbrand" layoutX="431.0" layoutY="225.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Supplied by" textFill="#570352" AnchorPane.leftAnchor="434.0">
          <font>
-            <Font name="Gill Sans MT" size="16.0" />
+            <Font name="Calibri" size="24.0" />
          </font></Label>
-      <Label fx:id="lbl_date" layoutX="118.0" layoutY="251.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Date" textFill="#0b4d0a" AnchorPane.leftAnchor="123.0">
+      <Label fx:id="lbl_date" layoutX="428.0" layoutY="277.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Date" textFill="#570352" AnchorPane.leftAnchor="434.0">
          <font>
-            <Font name="Gill Sans MT" size="16.0" />
+            <Font name="Calibri" size="24.0" />
          </font></Label>
-      <Label fx:id="lbl_desinaddbrand" layoutX="112.0" layoutY="302.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Description" textFill="#0b4d0a" AnchorPane.leftAnchor="123.0">
+      <Label fx:id="lbl_desinaddbrand" layoutX="438.0" layoutY="388.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Description" textFill="#570352" AnchorPane.leftAnchor="438.0">
          <font>
-            <Font name="Gill Sans MT" size="16.0" />
+            <Font name="Calibri" size="24.0" />
          </font></Label>
-      <TextField fx:id="tf_brandname" layoutX="348.0" layoutY="132.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="178.0" style="-fx-background-color: transparent; -fx-border-color: #001a00; -fx-border-width: 0px 0px 2px 0px;" AnchorPane.leftAnchor="349.0" AnchorPane.rightAnchor="93.0" />
-      <ComboBox fx:id="combo_supname" layoutX="348.0" layoutY="184.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="178.0" promptText="Select a Supplier" AnchorPane.leftAnchor="349.0" AnchorPane.rightAnchor="93.0" />
-      <DatePicker fx:id="datepicker_date" layoutX="348.0" layoutY="235.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="178.0" AnchorPane.leftAnchor="349.0" AnchorPane.rightAnchor="93.0" />
-      <TextField fx:id="tf_desinaddbrand" layoutX="349.0" layoutY="284.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="178.0" style="-fx-background-color: transparent; -fx-border-color: #001a00; -fx-border-width: 0px 0px 2px 0px;" AnchorPane.leftAnchor="349.0" AnchorPane.rightAnchor="93.0" />
-      <Button fx:id="btn_add_brand" layoutX="248.0" layoutY="342.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnAddBrand" prefHeight="32.0" prefWidth="88.0" styleClass="btn_add_brand" stylesheets="@MiniCss.css" text="Add" textFill="#144904">
+      <TextField fx:id="tf_brandname" layoutX="742.0" layoutY="165.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="199.0" style="-fx-border-color: #001a00;" AnchorPane.leftAnchor="737.0" AnchorPane.rightAnchor="430.0" />
+      <ComboBox fx:id="combo_supname" layoutX="732.0" layoutY="223.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="205.0" promptText="Select a Supplier" AnchorPane.leftAnchor="732.0" AnchorPane.rightAnchor="432.0" />
+      <DatePicker fx:id="datepicker_date" layoutX="735.0" layoutY="275.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="199.0" AnchorPane.leftAnchor="732.0" AnchorPane.rightAnchor="435.0" />
+      <Button fx:id="btn_add_brand" layoutX="613.0" layoutY="505.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnAddBrand" prefHeight="32.0" prefWidth="88.0" style="-fx-background-radius: 20px;" styleClass="btn_add_brand" stylesheets="@MiniCss.css" text="Add" textFill="#144904">
          <font>
-            <Font name="Arial Black" size="16.0" />
+            <Font name="Calibri" size="18.0" />
          </font></Button>
-      <Button fx:id="btn_back_in_addbrand" layoutX="479.0" layoutY="382.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnGoBackToBrandOverviewInAddBrand" styleClass="btn_back_in_addbrand" stylesheets="@MiniCss.css" text="Back" textFill="#144904">
+      <Button fx:id="btn_back_in_addbrand" layoutX="832.0" layoutY="559.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnGoBackToBrandOverviewInAddBrand" prefHeight="32.0" prefWidth="101.0" style="-fx-background-radius: 20px;" styleClass="btn_back_in_addbrand" stylesheets="@MiniCss.css" text="Back" textFill="#144904">
          <font>
-            <Font name="Arial Black" size="16.0" />
+            <Font name="Calibri" size="18.0" />
          </font></Button>
-      <Label fx:id="lbl_brandid" layoutX="123.0" layoutY="99.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="88.0" text="Brand ID" textFill="#0b4d0a" AnchorPane.leftAnchor="123.0">
+      <Label fx:id="lbl_brandid" layoutX="434.0" layoutY="111.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="132.0" text="Brand ID" textFill="#570352" AnchorPane.leftAnchor="434.0">
          <font>
-            <Font name="Gill Sans MT" size="16.0" />
+            <Font name="Calibri" size="24.0" />
          </font>
       </Label>
-      <TextField fx:id="tf_brandid" layoutX="349.0" layoutY="82.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="178.0" style="-fx-background-color: transparent; -fx-border-color: #001a00; -fx-border-width: 0px 0px 2px 0px;" AnchorPane.leftAnchor="349.0" />
+      <TextField fx:id="tf_brandid" layoutX="735.0" layoutY="104.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="199.0" style="-fx-border-color: #001a00;" AnchorPane.leftAnchor="732.0" />
+      <TextArea fx:id="ta_desinaddbrand" layoutX="738.0" layoutY="329.0" prefHeight="145.0" prefWidth="193.0" style="-fx-border-color: #001a00;" AnchorPane.leftAnchor="735.0" />
    </children>
 </AnchorPane>
