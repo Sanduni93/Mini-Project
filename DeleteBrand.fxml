@@ -4,62 +4,66 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="DeleteBrandOverview" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="650.0" style="-fx-background-color: #4dff4d;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.DeleteBrandController">
+<AnchorPane fx:id="DeleteBrandOverview" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1366.0" style="-fx-border-color: #4d0026; -fx-border-width: 5px;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.DeleteBrandController">
    <children>
-      <Label fx:id="lbl_deletebrand" layoutX="264.0" layoutY="21.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="123.0" text="Delete Brand" textFill="#144904">
+      <Label fx:id="lbl_deletebrand" layoutX="595.0" layoutY="31.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="182.0" text="DELETE BRAND" textFill="#570352" AnchorPane.leftAnchor="595.0" AnchorPane.rightAnchor="594.0">
          <font>
             <Font name="Bodoni MT Black" size="18.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_brandid_indeletebrand" layoutX="119.0" layoutY="162.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Brand ID" textFill="#0b4d0a" AnchorPane.leftAnchor="138.0" AnchorPane.topAnchor="151.0">
+      <Label fx:id="lbl_brandid_indeletebrand" layoutX="398.0" layoutY="151.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Brand ID" textFill="#570352" AnchorPane.leftAnchor="398.0" AnchorPane.topAnchor="151.0">
          <font>
-            <Font name="Gill Sans MT" size="16.0" />
+            <Font name="Calibri" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_brandname_indeletebrand" layoutX="109.0" layoutY="202.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Brand Name" textFill="#0b4d0a" AnchorPane.leftAnchor="138.0">
+      <Label fx:id="lbl_brandname_indeletebrand" layoutX="511.0" layoutY="236.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Brand Name" textFill="#570352" AnchorPane.leftAnchor="398.0">
          <font>
-            <Font name="Gill Sans MT" size="16.0" />
+            <Font name="Calibri" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_supname_indeletebrand" layoutX="138.0" layoutY="267.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Supplied By" textFill="#0b4d0a" AnchorPane.leftAnchor="138.0">
+      <Label fx:id="lbl_supname_indeletebrand" layoutX="511.0" layoutY="303.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Supplied By" textFill="#570352" AnchorPane.leftAnchor="398.0">
          <font>
-            <Font name="Gill Sans MT" size="16.0" />
+            <Font name="Calibri" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_date_indeletebrand" layoutX="138.0" layoutY="317.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="46.0" text="Date" textFill="#0b4d0a" AnchorPane.leftAnchor="138.0">
+      <Label fx:id="lbl_date_indeletebrand" layoutX="511.0" layoutY="367.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="77.0" text="Date" textFill="#570352" AnchorPane.leftAnchor="398.0">
          <font>
-            <Font name="Gill Sans MT" size="16.0" />
+            <Font name="Calibri" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_des_indeletebrand" layoutX="137.0" layoutY="376.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Description" textFill="#0b4d0a" AnchorPane.leftAnchor="137.0">
+      <Label fx:id="lbl_des_indeletebrand" layoutX="499.0" layoutY="474.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Description" textFill="#570352" AnchorPane.leftAnchor="398.0">
          <font>
-            <Font name="Gill Sans MT" size="16.0" />
+            <Font name="Calibri" size="24.0" />
          </font>
       </Label>
-      <TextField fx:id="tf_enter_brandid_todelete" layoutX="123.0" layoutY="75.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" promptText="Enter Brand ID" AnchorPane.leftAnchor="144.0" />
-      <TextField fx:id="tf_brandid_indeletebrand" layoutX="345.0" layoutY="148.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="174.0" style="-fx-background-color: transparet; -fx-border-color: #001a00; -fx-border-width: 0px 0px 2px 0px;" AnchorPane.leftAnchor="349.0" />
-      <TextField fx:id="tf_brandname_indeletebrand" layoutX="345.0" layoutY="199.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="174.0" style="-fx-background-color: transparent; -fx-border-color: #001a00; -fx-border-width: 0px 0px 2px 0px;" AnchorPane.leftAnchor="349.0" />
-      <TextField fx:id="tf_des_indeletebrand" layoutX="332.0" layoutY="358.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="165.0" style="-fx-background-color: transparent; -fx-border-color: #001a00; -fx-border-width: 0px 0px 2px 0px;" AnchorPane.leftAnchor="349.0" />
-      <Button fx:id="btn_load_branddetails_todelete" layoutX="387.0" layoutY="75.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btn_load_branddetails_todelete" prefHeight="36.0" prefWidth="65.0" styleClass="btn_load_branddetails_todelete" stylesheets="@MiniCss.css" text="GO" textFill="#144904" AnchorPane.leftAnchor="387.0">
+      <TextField fx:id="tf_enter_brandid_todelete" layoutX="398.0" layoutY="76.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="188.0" promptText="Enter Brand ID" style="-fx-background-radius: 3px;" AnchorPane.leftAnchor="393.0">
          <font>
-            <Font name="Arial Black" size="16.0" />
+            <Font size="18.0" />
+         </font></TextField>
+      <TextField fx:id="tf_brandid_indeletebrand" layoutX="768.0" layoutY="162.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="200.0" style="-fx-border-color: #001a00;" AnchorPane.leftAnchor="763.0" />
+      <TextField fx:id="tf_brandname_indeletebrand" layoutX="762.0" layoutY="233.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="200.0" style="-fx-border-color: #001a00;" AnchorPane.leftAnchor="762.0" />
+      <Button fx:id="btn_load_branddetails_todelete" layoutX="779.0" layoutY="71.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btn_load_branddetails_todelete" prefHeight="34.0" prefWidth="73.0" style="-fx-background-radius: 15px;" styleClass="btn_load_branddetails_todelete" stylesheets="@MiniCss.css" text="GO" textFill="#144904" AnchorPane.leftAnchor="779.0">
+         <font>
+            <Font name="Calibri" size="18.0" />
          </font>
       </Button>
-      <Button fx:id="btn_back_in_deletebrand" layoutX="463.0" layoutY="434.0" mnemonicParsing="false" onAction="#btn_back_in_deletebrand" styleClass="btn_back_in_deletebrand" stylesheets="@MiniCss.css" text="Back" textFill="#144904">
+      <Button fx:id="btn_back_in_deletebrand" layoutX="914.0" layoutY="661.0" mnemonicParsing="false" onAction="#btn_back_in_deletebrand" style="-fx-background-radius: 15px;" styleClass="btn_back_in_deletebrand" stylesheets="@MiniCss.css" text="Back" textFill="#144904">
          <font>
-            <Font name="Arial Black" size="16.0" />
+            <Font name="Calibri" size="18.0" />
          </font>
       </Button>
-      <Button fx:id="btn_delete_brand" layoutX="268.0" layoutY="416.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnDeleteBrand" styleClass="btn_delete_brand" stylesheets="@MiniCss.css" text="Delete" textFill="#144904">
+      <Button fx:id="btn_delete_brand" layoutX="640.0" layoutY="594.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnDeleteBrand" style="-fx-background-radius: 15px;" styleClass="btn_delete_brand" stylesheets="@MiniCss.css" text="Delete" textFill="#144904">
          <font>
-            <Font name="Arial Black" size="16.0" />
+            <Font name="Calibri" size="18.0" />
          </font>
       </Button>
-      <ComboBox fx:id="combo_supname_indeletebrand" layoutX="345.0" layoutY="254.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="174.0" AnchorPane.leftAnchor="349.0" />
-      <DatePicker fx:id="datepicker_date_indeletebrand" layoutX="349.0" layoutY="313.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" AnchorPane.leftAnchor="349.0" />
+      <ComboBox fx:id="combo_supname_indeletebrand" layoutX="766.0" layoutY="300.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="200.0" AnchorPane.leftAnchor="766.0" />
+      <DatePicker fx:id="datepicker_date_indeletebrand" layoutX="773.0" layoutY="364.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="200.0" AnchorPane.leftAnchor="768.0" />
+      <TextArea fx:id="ta_des_indeletebrand" layoutX="769.0" layoutY="428.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="119.0" prefWidth="200.0" style="-fx-border-color: #001a00;" />
    </children>
 </AnchorPane>
