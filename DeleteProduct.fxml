@@ -8,93 +8,93 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="820.0" style="-fx-background-color: #ff6699;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.DeleteProductController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1366.0" style="-fx-border-color: #003399; -fx-border-width: 3px;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.DeleteProductController">
    <children>
-      <Label fx:id="lbl_supname_in_deleteproduct" layoutX="449.0" layoutY="162.0" text="Supplier ' s Name" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="158.0">
+      <Label fx:id="lbl_supname_in_deleteproduct" layoutX="405.0" layoutY="352.0" text="Supplier ' s Name" textFill="#002266" AnchorPane.leftAnchor="343.0" AnchorPane.topAnchor="352.0">
          <font>
-            <Font name="Times New Roman" size="16.0" />
+            <Font name="Calibri" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_brand_in_deleteproduct" layoutX="403.0" layoutY="212.0" text="Brand" AnchorPane.leftAnchor="400.0">
+      <Label fx:id="lbl_brand_in_deleteproduct" layoutX="408.0" layoutY="390.0" text="Brand" textFill="#002266" AnchorPane.leftAnchor="343.0">
          <font>
-            <Font name="Times New Roman" size="16.0" />
+            <Font name="Calibri" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_category_in_deleteproduct" layoutX="403.0" layoutY="267.0" text="Category" AnchorPane.leftAnchor="400.0">
+      <Label fx:id="lbl_category_in_deleteproduct" layoutX="408.0" layoutY="439.0" text="Category" textFill="#002266" AnchorPane.leftAnchor="343.0">
          <font>
-            <Font name="Times New Roman" size="16.0" />
+            <Font name="Calibri" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_rma_in_deleteproduct" layoutX="400.0" layoutY="320.0" text="Return Mercentigning Authorization" AnchorPane.leftAnchor="400.0">
+      <Label fx:id="lbl_rma_in_deleteproduct" layoutX="343.0" layoutY="491.0" text="Return Mercentigning Authorization" textFill="#002266" AnchorPane.leftAnchor="343.0">
          <font>
-            <Font name="Times New Roman" size="16.0" />
+            <Font name="Calibri" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_date_in_deleteproduct" layoutX="403.0" layoutY="372.0" text="Date" AnchorPane.leftAnchor="400.0">
+      <Label fx:id="lbl_date_in_deleteproduct" layoutX="419.0" layoutY="545.0" text="Date" textFill="#002266" AnchorPane.leftAnchor="343.0">
          <font>
-            <Font name="Times New Roman" size="16.0" />
+            <Font name="Calibri" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_productid_in_deleteproduct" layoutX="33.0" layoutY="162.0" text="Product ID" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="158.0">
+      <Label fx:id="lbl_productid_in_deleteproduct" layoutX="413.0" layoutY="112.0" text="Product ID" textFill="#002266" AnchorPane.leftAnchor="343.0" AnchorPane.topAnchor="112.0">
          <font>
-            <Font name="Times New Roman" size="16.0" />
+            <Font name="Calibri" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_productname_in_deleteproduct" layoutX="20.0" layoutY="212.0" text="Product Name" AnchorPane.leftAnchor="20.0">
+      <Label fx:id="lbl_productname_in_deleteproduct" layoutX="413.0" layoutY="157.0" text="Product Name" textFill="#002266" AnchorPane.leftAnchor="343.0">
          <font>
-            <Font name="Times New Roman" size="16.0" />
+            <Font name="Calibri" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_quantity_in_deleteproduct" layoutX="33.0" layoutY="267.0" text="Quantity" AnchorPane.leftAnchor="20.0">
+      <Label fx:id="lbl_quantity_in_deleteproduct" layoutX="416.0" layoutY="208.0" text="Quantity" textFill="#002266" AnchorPane.leftAnchor="343.0">
          <font>
-            <Font name="Times New Roman" size="16.0" />
+            <Font name="Calibri" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_pprice_in_deleteproduct" layoutX="33.0" layoutY="320.0" text="Purchased Price" AnchorPane.leftAnchor="20.0">
+      <Label fx:id="lbl_pprice_in_deleteproduct" layoutX="409.0" layoutY="254.0" text="Purchased Price" textFill="#002266" AnchorPane.leftAnchor="343.0">
          <font>
-            <Font name="Times New Roman" size="16.0" />
+            <Font name="Calibri" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_sprice_in_deleteproduct" layoutX="33.0" layoutY="372.0" text="Sell Price" AnchorPane.leftAnchor="20.0">
+      <Label fx:id="lbl_sprice_in_deleteproduct" layoutX="412.0" layoutY="307.0" text="Sell Price" textFill="#002266" AnchorPane.leftAnchor="343.0">
          <font>
-            <Font name="Times New Roman" size="16.0" />
+            <Font name="Calibri" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_delete_product" layoutX="345.0" layoutY="14.0" prefHeight="36.0" prefWidth="138.0" text="Delete Product" textFill="#720440">
+      <Label fx:id="lbl_delete_product" layoutX="345.0" layoutY="14.0" prefHeight="36.0" prefWidth="202.0" text="DELETE PRODUCT" textFill="#002266" AnchorPane.leftAnchor="582.0">
          <font>
             <Font name="Bodoni MT Black" size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="tf_productid_in_deleteproduct" layoutX="133.0" layoutY="154.0" AnchorPane.leftAnchor="183.0" />
-      <TextField fx:id="tf_productname_in_deleteproduct" layoutX="183.0" layoutY="209.0" />
-      <TextField fx:id="tf_quantity_in_deleteproduct" layoutX="183.0" layoutY="263.0" />
-      <TextField fx:id="tf_pprice_in_deleteproduct" layoutX="183.0" layoutY="317.0" />
-      <TextField fx:id="tf_sprice_in_deleteproduct" layoutX="183.0" layoutY="369.0" />
-      <TextField fx:id="tf_rma_in_deleteproduct" layoutX="649.0" layoutY="317.0" prefHeight="25.0" prefWidth="162.0" AnchorPane.rightAnchor="20.0" />
-      <ComboBox fx:id="combo_supname_in_deleteproduct" layoutX="648.0" layoutY="155.0" prefHeight="25.0" prefWidth="162.0" promptText="Select a Supplier" AnchorPane.rightAnchor="20.0" />
-      <ComboBox fx:id="combo_brand_in_deleteproduct" layoutX="648.0" layoutY="209.0" prefHeight="25.0" prefWidth="162.0" promptText="Select a Brand" AnchorPane.rightAnchor="20.0" />
-      <ComboBox fx:id="combo_category_in_deleteproduct" layoutX="648.0" layoutY="264.0" prefHeight="25.0" prefWidth="162.0" promptText="Select a Category" AnchorPane.rightAnchor="20.0" />
-      <DatePicker fx:id="datepicker_date_in_deleteproduct" layoutX="626.0" layoutY="369.0" prefHeight="25.0" prefWidth="162.0" AnchorPane.rightAnchor="20.0" />
-      <Button fx:id="btn_load_productdetails_todelete" layoutX="517.0" layoutY="77.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnLoadProductDetailsToDelete" styleClass="btn_load_productdetails_todelete" stylesheets="@MiniCss.css" text="GO">
+      <TextField fx:id="tf_productid_in_deleteproduct" layoutX="793.0" layoutY="113.0" prefHeight="25.0" prefWidth="162.0" AnchorPane.leftAnchor="790.0" />
+      <TextField fx:id="tf_productname_in_deleteproduct" layoutX="793.0" layoutY="158.0" prefHeight="25.0" prefWidth="162.0" AnchorPane.leftAnchor="790.0" />
+      <TextField fx:id="tf_quantity_in_deleteproduct" layoutX="793.0" layoutY="209.0" prefHeight="25.0" prefWidth="162.0" AnchorPane.leftAnchor="790.0" />
+      <TextField fx:id="tf_pprice_in_deleteproduct" layoutX="793.0" layoutY="255.0" prefHeight="25.0" prefWidth="162.0" AnchorPane.leftAnchor="790.0" />
+      <TextField fx:id="tf_sprice_in_deleteproduct" layoutX="793.0" layoutY="308.0" prefHeight="25.0" prefWidth="162.0" AnchorPane.leftAnchor="790.0" />
+      <TextField fx:id="tf_rma_in_deleteproduct" layoutX="796.0" layoutY="492.0" prefHeight="25.0" prefWidth="166.0" AnchorPane.leftAnchor="787.0" AnchorPane.rightAnchor="407.0" />
+      <ComboBox fx:id="combo_supname_in_deleteproduct" layoutX="793.0" layoutY="353.0" prefHeight="25.0" prefWidth="172.0" promptText="Select a Supplier" AnchorPane.leftAnchor="787.0" AnchorPane.rightAnchor="404.0" />
+      <ComboBox fx:id="combo_brand_in_deleteproduct" layoutX="788.0" layoutY="391.0" prefHeight="25.0" prefWidth="172.0" promptText="Select a Brand" AnchorPane.leftAnchor="788.0" AnchorPane.rightAnchor="406.0" />
+      <ComboBox fx:id="combo_category_in_deleteproduct" layoutX="796.0" layoutY="440.0" prefHeight="25.0" prefWidth="172.0" promptText="Select a Category" AnchorPane.leftAnchor="787.0" AnchorPane.rightAnchor="401.0" />
+      <DatePicker fx:id="datepicker_date_in_deleteproduct" layoutX="802.0" layoutY="546.0" prefHeight="25.0" prefWidth="162.0" AnchorPane.leftAnchor="787.0" AnchorPane.rightAnchor="405.0" />
+      <Button fx:id="btn_load_productdetails_todelete" layoutX="786.0" layoutY="58.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnLoadProductDetailsToDelete" prefHeight="30.0" prefWidth="88.0" style="-fx-background-radius: 20px;" styleClass="btn_load_productdetails_todelete" stylesheets="@MiniCss.css" text="GO">
          <font>
-            <Font name="Arial Black" size="16.0" />
+            <Font name="Calibri" size="18.0" />
          </font>
       </Button>
-      <Button fx:id="btn_deleteproduct" layoutX="351.0" layoutY="440.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnDeleteProduct" prefHeight="36.0" prefWidth="92.0" styleClass="btn_deleteproduct" stylesheets="@MiniCss.css" text="Delete">
+      <Button fx:id="btn_deleteproduct" layoutX="598.0" layoutY="641.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnDeleteProduct" prefHeight="30.0" prefWidth="88.0" style="-fx-background-radius: 20px;" styleClass="btn_deleteproduct" stylesheets="@MiniCss.css" text="Delete" AnchorPane.leftAnchor="598.0">
          <font>
-            <Font name="Arial Black" size="16.0" />
+            <Font name="Calibri" size="18.0" />
          </font>
       </Button>
-      <Button fx:id="btn_back_in_deleteproduct" layoutX="711.0" layoutY="492.0" mnemonicParsing="false" onAction="#btnBackInDeleteProduct" prefHeight="36.0" prefWidth="83.0" styleClass="btn_back_in_deleteproduct" stylesheets="@MiniCss.css" text="Back">
+      <Button fx:id="btn_back_in_deleteproduct" layoutX="862.0" layoutY="682.0" mnemonicParsing="false" onAction="#btnBackInDeleteProduct" prefHeight="30.0" prefWidth="88.0" style="-fx-background-radius: 20px;" styleClass="btn_back_in_deleteproduct" stylesheets="@MiniCss.css" text="Back" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="862.0">
          <font>
-            <Font name="Arial Black" size="16.0" />
+            <Font name="Calibri" size="18.0" />
          </font>
       </Button>
-      <TextField fx:id="tf_enter_productid_todeleteproducts" layoutX="150.0" layoutY="83.0" prefHeight="25.0" prefWidth="172.0" promptText="Enter Product ID">
+      <TextField fx:id="tf_enter_productid_todeleteproducts" layoutX="413.0" layoutY="54.0" prefHeight="19.0" prefWidth="172.0" promptText="Enter Product ID">
          <font>
-            <Font name="Arial Black" size="16.0" />
+            <Font size="18.0" />
          </font>
       </TextField>
-      <TextField fx:id="tf_date_in_deleteproduct" layoutX="637.0" layoutY="415.0" />
+      <TextField fx:id="tf_date_in_deleteproduct" layoutX="793.0" layoutY="594.0" prefHeight="25.0" prefWidth="162.0" AnchorPane.leftAnchor="790.0" />
    </children>
 </AnchorPane>
