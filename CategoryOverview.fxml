@@ -7,46 +7,46 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="CategoryOverview" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="800.0" style="-fx-background-color: #ffff66;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.CategoryOverviewController">
+<AnchorPane id="AnchorPane" fx:id="CategoryOverview" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1366.0" style="-fx-background-color: #ffff66;" styleClass="CategoryOverview" stylesheets="@MiniCss.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.CategoryOverviewController">
    <children>
-      <Label fx:id="lbl_catg_info" layoutX="313.0" layoutY="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="199.0" text="Information About Categories" textFill="#331a00">
+      <Label fx:id="lbl_catg_info" layoutX="528.0" layoutY="41.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="310.0" text="Information About Categories" textFill="#331a00" AnchorPane.leftAnchor="528.0" AnchorPane.rightAnchor="528.0">
          <font>
-            <Font name="Calibri Bold" size="16.0" />
+            <Font name="Calibri Bold" size="24.0" />
          </font>
       </Label>
-      <Button fx:id="btn_load_catgdetails" layoutX="37.0" layoutY="371.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" styleClass="btn_load_catgdetails" stylesheets="@MiniCss.css" text="Load Category Details">
+      <Button fx:id="btn_load_catgdetails" layoutX="107.0" layoutY="455.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btn_load_category_details" prefHeight="32.0" prefWidth="229.0" style="-fx-background-radius: 20px;" styleClass="btn_load_catgdetails" stylesheets="@MiniCss.css" text="Load Category Details">
          <font>
             <Font name="Arial Black" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="btn_addcatg" layoutX="37.0" layoutY="422.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addCatgBtn" styleClass="btn_addcatg" stylesheets="@MiniCss.css" text="Add">
+      <Button fx:id="btn_addcatg" layoutX="115.0" layoutY="534.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addCatgBtn" prefHeight="30.0" prefWidth="88.0" style="-fx-background-radius: 20px;" styleClass="btn_addcatg" stylesheets="@MiniCss.css" text="Add" AnchorPane.leftAnchor="115.0">
          <font>
             <Font name="Arial Black" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="btn_updatecatg" layoutX="356.0" layoutY="422.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#updateCatgBtn" styleClass="btn_updatecatg" stylesheets="@MiniCss.css" text="Update">
+      <Button fx:id="btn_updatecatg" layoutX="651.0" layoutY="534.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#updateCatgBtn" prefHeight="30.0" prefWidth="88.0" style="-fx-background-radius: 20px;" styleClass="btn_updatecatg" stylesheets="@MiniCss.css" text="Update">
          <font>
             <Font name="Arial Black" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="btn_deletecatg" layoutX="650.0" layoutY="422.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" styleClass="btn_deletecatg" stylesheets="@MiniCss.css" text="Delete">
+      <Button fx:id="btn_deletecatg" layoutX="1163.0" layoutY="534.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#deleteCatgBtn" prefHeight="30.0" prefWidth="88.0" style="-fx-background-radius: 20px;" styleClass="btn_deletecatg" stylesheets="@MiniCss.css" text="Delete" AnchorPane.rightAnchor="115.0">
          <font>
             <Font name="Arial Black" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="btn_back_in_catgoverview" layoutX="656.0" layoutY="471.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" styleClass="btn_back_in_catgoverview" stylesheets="@MiniCss.css" text="Back">
+      <Button fx:id="btn_back_in_catgoverview" layoutX="1163.0" layoutY="619.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnGoBackToSupplierOverviewFromCategoryView" prefHeight="30.0" prefWidth="88.0" style="-fx-background-radius: 20px;" styleClass="btn_back_in_catgoverview" stylesheets="@MiniCss.css" text="Back">
          <font>
             <Font name="Arial Black" size="14.0" />
          </font>
       </Button>
-      <TableView fx:id="tbl_catg_info" layoutX="37.0" layoutY="71.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="278.0" prefWidth="713.0" AnchorPane.leftAnchor="37.0" AnchorPane.rightAnchor="37.0">
+      <TableView fx:id="tbl_catg_info" layoutX="107.0" layoutY="131.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="1152.0" AnchorPane.leftAnchor="107.0" AnchorPane.rightAnchor="123.0">
         <columns>
-          <TableColumn fx:id="col_catgid" prefWidth="82.0" text="Category ID" />
-          <TableColumn fx:id="col_catgname" prefWidth="142.0" text="Category Name" />
-            <TableColumn fx:id="col_brandname" prefWidth="146.0" text="Brand" />
-            <TableColumn fx:id="col_supname" prefWidth="136.0" text="Supplierś Name" />
-            <TableColumn fx:id="col_date" prefWidth="120.0" text="Date" />
-            <TableColumn fx:id="col_des" prefWidth="99.0" text="Description" />
+          <TableColumn fx:id="col_catgid" prefWidth="143.0" text="Category ID" />
+          <TableColumn fx:id="col_catgname" prefWidth="237.0" text="Category Name" />
+            <TableColumn fx:id="col_brandname" prefWidth="169.0" text="Brand" />
+            <TableColumn fx:id="col_supname" prefWidth="211.0" text="Supplierś Name" />
+            <TableColumn fx:id="col_date" minWidth="0.0" prefWidth="164.0" text="Date" />
+            <TableColumn fx:id="col_des" prefWidth="226.0" text="Description" />
         </columns>
       </TableView>
    </children>
