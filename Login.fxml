@@ -7,9 +7,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="784.0" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-radius: 10px;" styleClass="root" stylesheets="@MiniCss.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.LoginController">
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1366.0" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-radius: 10px;" styleClass="root" stylesheets="@MiniCss.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.LoginController">
    <children>
-      <AnchorPane fx:id="pane_to_login" layoutX="338.0" layoutY="53.0" prefHeight="465.0" prefWidth="401.0" style="-fx-border-radius: 50px;" styleClass="pane_to_login" stylesheets="@MiniCss.css">
+      <AnchorPane fx:id="pane_to_login" layoutX="626.0" layoutY="101.0" prefHeight="466.0" prefWidth="400.0" style="-fx-border-radius: 50px; -fx-border-width: 20px;" styleClass="pane_to_login" stylesheets="@MiniCss.css" AnchorPane.bottomAnchor="132.0" AnchorPane.topAnchor="132.0">
          <children>
             <TextField fx:id="tf_username" layoutX="67.0" layoutY="222.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="285.0" promptText="User Name" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 1px 1px 1px 1px; -fx-border-radius: 20px; -fx-border-color: #1a0d00;" styleClass="tf_username" stylesheets="@MiniCss.css">
                <font>
@@ -33,25 +33,35 @@
             </Button>
          </children>
       </AnchorPane>
-      <Label layoutX="54.0" layoutY="117.0" prefHeight="55.0" prefWidth="207.0" text="WELCOME" textAlignment="CENTER" textFill="#f2f2f2">
+      <Label layoutX="355.0" layoutY="234.0" prefHeight="55.0" prefWidth="204.0" text="WELCOME" textAlignment="CENTER" textFill="#066b57" AnchorPane.leftAnchor="355.0" AnchorPane.topAnchor="234.0">
          <font>
             <Font name="Baskerville Old Face" size="36.0" />
          </font>
       </Label>
-      <Label layoutX="131.0" layoutY="215.0" text="TO" textAlignment="CENTER" textFill="#f2f2f2">
+      <Label layoutX="418.0" layoutY="344.0" prefHeight="42.0" prefWidth="56.0" text="TO" textAlignment="CENTER" textFill="#066b57" AnchorPane.topAnchor="344.0">
          <font>
             <Font name="Baskerville Old Face" size="36.0" />
          </font>
       </Label>
-      <Label layoutX="31.0" layoutY="305.0" text="ELECTROCITY" textFill="#f2f2f2">
+      <Label layoutX="319.0" layoutY="452.0" text="ELECTROCITY" textFill="#030c3c" AnchorPane.bottomAnchor="236.0">
          <font>
             <Font name="Baskerville Old Face" size="36.0" />
          </font>
       </Label>
-      <Label layoutX="31.0" layoutY="450.0" prefHeight="17.0" prefWidth="194.0" text="Stock Keeper" textFill="#7a7e80">
+      <Label layoutX="337.0" layoutY="556.0" prefHeight="42.0" prefWidth="194.0" text="Stock Keeper" textFill="#bfe1f2">
          <font>
-            <Font name="Baskerville Old Face" size="18.0" />
+            <Font name="Baskerville Old Face" size="24.0" />
          </font>
       </Label>
+      <Button fx:id="btn_minimizeInLogin" contentDisplay="TEXT_ONLY" layoutX="1199.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#minimizeInLogin" prefHeight="55.0" prefWidth="52.0" style="-fx-background-color: White;" text="-" textFill="#e70606">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_closeLogin" contentDisplay="TEXT_ONLY" layoutX="1270.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#closeInLogin" prefHeight="55.0" prefWidth="52.0" style="-fx-background-color: white;" text="X" textFill="#e70606">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
