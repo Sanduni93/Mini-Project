@@ -1,4 +1,5 @@
 
+
 package main;
 
 
@@ -92,6 +93,30 @@ public class AddNewAuditorController implements Initializable {
     private Connection conn = null;
     private PreparedStatement pst = null;
     ResultSet rs = null;
+    @FXML
+    private Button btn_summary_inaddauditor;
+    @FXML
+    private Button btn_back_inaddauditor;
+    @FXML
+    private Button btnCloseInAddNewAuditor;
+    @FXML
+    private Button btnMinimizeInAddNewAuditor;
+    @FXML
+    private Label lbl_vlidateAuditorFname;
+    @FXML
+    private Label lbl_validateAuditorLname;
+    @FXML
+    private Label lbl_validateAuditorAddress;
+    @FXML
+    private Label lbl_validateAuditorConnum;
+    @FXML
+    private Label lbl_validateAuditorId;
+    @FXML
+    private Label lbl_validateAuditorNic;
+    @FXML
+    private Label lbl_validateAuditorPass;
+    @FXML
+    private Label lbl_validateAuditorUname;
   
 
     @Override
@@ -161,8 +186,19 @@ public class Function{
  }
     
    @FXML
-   public void addNewAuditor() throws SQLException {
-          Connection conn = db.Connect();
+   public void addNewAuditor(ActionEvent event) throws SQLException {
+       
+       boolean isauditorid = Validation.TextFieldValidation.isTextFieldNotEmpty(tf_auditorId, lbl_validateAuditorId, "AudiorID is required.");
+       boolean isfname = Validation.TextFieldValidation.isTextFieldNotEmpty(tf_auditorFname, lbl_vlidateAuditorFname, "Auditor Firstname is required.");
+       boolean islname = Validation.TextFieldValidation.isTextFieldNotEmpty(tf_auditorLname, lbl_validateAuditorLname, "Auditor Lastname is required.");
+       boolean isadressAuditor = Validation.TextFieldValidation.isTextAreaNotEmpty(ta_auditorAdd, lbl_validateAuditorAddress, "Auditor Address is required.");
+       boolean isnic = Validation.TextFieldValidation.isTextFieldNotEmpty(tf_auditorNic, lbl_validateAuditorNic, "Auditor NIC Number is required.");
+       boolean isconnum = Validation.TextFieldValidation.isTextFieldNotEmpty(tf_auditorConnum, lbl_validateAuditorConnum, "Auditor Contact number is required.");
+       boolean isusername = Validation.TextFieldValidation.isTextFieldNotEmpty(tf_auditorUname, lbl_validateAuditorUname, "Auditor Username is required.");
+       boolean ispassword = Validation.TextFieldValidation.isPasswordFieldNotEmpty(pwf_auditorPassword, lbl_validateAuditorPass, "Auditor Password is required.");
+       
+       if(isauditorid && isfname && islname && isadressAuditor && isnic && isconnum && isusername && ispassword ){
+       Connection conn = db.Connect();
             String auditorid = tf_auditorId.getText();
             String firstname = tf_auditorFname.getText();
             String lastname = tf_auditorLname.getText();
@@ -171,8 +207,6 @@ public class Function{
             String dob = datepicker_auditorDob.getEditor().getText();
             String connum = tf_auditorConnum.getText();
             String username = tf_auditorUname.getText();
-          
-            
             String password = pwf_auditorPassword.getText();
         try {
            String sql = "insert into addauditorstable (auditorid,firstname,lastname,address,nic,dob,connum,username,password)"
@@ -197,6 +231,7 @@ public class Function{
         pst.execute();
         pst.close();
         }
+       }
         tf_auditorId.clear();
         tf_auditorFname.clear();
         tf_auditorLname.clear();
@@ -298,4 +333,14 @@ public void btnBackInAddNewAuditor(ActionEvent event) throws IOException{
         showSummaryFromAddNewAuditor.setScene(backToSummaryView);
         showSummaryFromAddNewAuditor.show();
 }
+
+ @FXML
+    private void minimizeInAddNewAuditorBtn(ActionEvent event){
+      MiniProject.getStageObj().setIconified(true);
+    }
+    //close btn
+     @FXML
+    private void closeInAddNewAuditorBtn(ActionEvent event){
+    System.exit(0);
+    }
 }
