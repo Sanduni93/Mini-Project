@@ -2,9 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
@@ -16,51 +14,63 @@
             <Font name="Bodoni MT Black" size="18.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_catgid_in_addcatg" layoutX="485.0" layoutY="101.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Category ID" textFill="#650606" AnchorPane.leftAnchor="481.0">
+      <Label fx:id="lbl_catgid_in_addcatg" layoutX="486.0" layoutY="101.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Category ID" textFill="#650606" AnchorPane.leftAnchor="481.0">
          <font>
             <Font name="Calibri" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_catgname_in_addcatg" layoutX="486.0" layoutY="161.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Category Name" textFill="#650606" AnchorPane.leftAnchor="481.0">
+      <Label fx:id="lbl_catgname_in_addcatg" layoutX="482.0" layoutY="188.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Category Name" textFill="#650606" AnchorPane.leftAnchor="481.0">
          <font>
             <Font name="Calibri" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_brandname_in_addcatg" layoutX="498.0" layoutY="222.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Brand" textFill="#650606" AnchorPane.leftAnchor="481.0">
+      <Label fx:id="lbl_brandname_in_addcatg" layoutX="487.0" layoutY="283.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Brand" textFill="#650606" AnchorPane.leftAnchor="481.0">
          <font>
             <Font name="Calibri" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_supname_in_addcatg" layoutX="481.0" layoutY="282.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Supplierś Name" textFill="#650606" AnchorPane.leftAnchor="481.0">
+      <Label fx:id="lbl_supname_in_addcatg" layoutX="469.0" layoutY="358.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Supplierś Name" textFill="#650606" AnchorPane.leftAnchor="481.0">
          <font>
             <Font name="Calibri" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_date_in_addcatg" layoutX="487.0" layoutY="348.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Date" textFill="#650606" AnchorPane.leftAnchor="481.0">
+      <Label fx:id="lbl_date_in_addcatg" layoutX="484.0" layoutY="447.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Date" textFill="#650606" AnchorPane.leftAnchor="484.0">
          <font>
             <Font name="Calibri" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_des_in_addcatg" layoutX="468.0" layoutY="408.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Description" textFill="#650606" AnchorPane.leftAnchor="481.0">
+      <Label fx:id="lbl_des_in_addcatg" layoutX="481.0" layoutY="506.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="AuditorID" textFill="#650606" AnchorPane.leftAnchor="481.0">
          <font>
             <Font name="Calibri" size="24.0" />
          </font>
       </Label>
       <TextField fx:id="tf_catgid_in_addcatg" layoutX="755.0" layoutY="102.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="202.0" style="-fx-border-color: #660000;" />
-      <TextField fx:id="tf_catgname_in_addcatg" layoutX="755.0" layoutY="162.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="202.0" style="-fx-border-color: #660000;" />
-      <ComboBox fx:id="combo_brandname_in_addcatg" layoutX="755.0" layoutY="223.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="202.0" promptText="Select a Brand" style="-fx-border-color: #660000;" />
-      <ComboBox fx:id="combo_supname_in_addcatg" layoutX="755.0" layoutY="279.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="202.0" promptText="Select a Supplier" style="-fx-border-color: #660000;" />
-      <DatePicker fx:id="datepicker_date_in_addcatg" layoutX="754.0" layoutY="344.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="202.0" style="-fx-border-color: #660000; -fx-background-color: transparent;" />
-      <Button fx:id="btn_add_catg" defaultButton="true" layoutX="711.0" layoutY="629.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addCategoryBtn" prefHeight="30.0" prefWidth="88.0" style="-fx-background-radius: 20px;" styleClass="btn_add_catg" stylesheets="@MiniCss.css" text="Add">
+      <TextField fx:id="tf_catgname_in_addcatg" layoutX="754.0" layoutY="189.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="202.0" style="-fx-border-color: #660000;" />
+      <ComboBox fx:id="combo_brandname_in_addcatg" layoutX="754.0" layoutY="284.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="202.0" promptText="Select a Brand" />
+      <ComboBox fx:id="combo_supname_in_addcatg" layoutX="754.0" layoutY="359.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="202.0" promptText="Select a Supplier" />
+      <Button fx:id="btn_add_catg" defaultButton="true" layoutX="666.0" layoutY="586.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addCategoryBtn" prefHeight="30.0" prefWidth="88.0" style="-fx-background-radius: 20px;" styleClass="btn_add_catg" stylesheets="@MiniCss.css" text="Add">
          <font>
             <Font name="Calibri" size="18.0" />
          </font>
       </Button>
-      <Button fx:id="btn_back_in_addcatg" layoutX="892.0" layoutY="659.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goBackToCategoryOverviewInAddCategory" prefHeight="30.0" prefWidth="77.0" style="-fx-background-radius: 20px;" styleClass="btn_back_in_addcatg" stylesheets="@MiniCss.css" text="Back">
+      <Button fx:id="btn_back_in_addcatg" layoutX="834.0" layoutY="635.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goBackToCategoryOverviewInAddCategory" prefHeight="30.0" prefWidth="77.0" style="-fx-background-radius: 20px;" styleClass="btn_back_in_addcatg" stylesheets="@MiniCss.css" text="Back">
          <font>
             <Font name="Calibri" size="18.0" />
          </font>
       </Button>
-      <TextArea fx:id="ta_des_in_addcatg" layoutX="754.0" layoutY="408.0" prefHeight="148.0" prefWidth="202.0" style="-fx-border-color: #660000;" />
+      <Button fx:id="btnCloseInAddCategory" layoutX="1218.0" layoutY="28.0" mnemonicParsing="false" onAction="#closeInAddCategoryBtn" prefHeight="39.0" prefWidth="39.0" style="-fx-background-color: WHITE;" text="X" textFill="#ea0303" AnchorPane.rightAnchor="70.0">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMinimizeInAddCategory" layoutX="1185.0" layoutY="28.0" mnemonicParsing="false" onAction="#minimizeInAddCategoryBtn" prefHeight="39.0" prefWidth="39.0" style="-fx-background-color: WHITE;" text="-" textFill="#ea0303" AnchorPane.rightAnchor="142.0">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="lbl_validCatgIdAddCategory" layoutX="754.0" layoutY="144.0" prefHeight="25.0" prefWidth="283.0" />
+      <Label fx:id="lbl_validCatgnameInAddCategory" layoutX="756.0" layoutY="234.0" prefHeight="25.0" prefWidth="283.0" />
+      <ComboBox fx:id="cmb_aidInAddCtg" layoutX="756.0" layoutY="507.0" prefHeight="25.0" prefWidth="202.0" promptText="Select an AuditorId" />
+      <TextField fx:id="tf_dateInAddCatg" layoutX="754.0" layoutY="447.0" prefHeight="25.0" prefWidth="202.0" style="-fx-border-color: black;" />
    </children>
 </AnchorPane>
